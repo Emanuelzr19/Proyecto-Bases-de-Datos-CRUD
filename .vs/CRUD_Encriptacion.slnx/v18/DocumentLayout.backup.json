@@ -1,0 +1,121 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\manez\\source\\repos\\CRUD_Encriptacion\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C6C8B57B-AFFB-B4DD-5034-42770964A7A1}|CRUD_Encriptacion\\CRUD_Encriptacion.csproj|c:\\users\\manez\\source\\repos\\crud_encriptacion\\crud_encriptacion\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C6C8B57B-AFFB-B4DD-5034-42770964A7A1}|CRUD_Encriptacion\\CRUD_Encriptacion.csproj|solutionrelative:crud_encriptacion\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E2D1E0C-3CCA-4604-9724-34CD081F3E99}|CRUD_Encriptacion\\CRUD_Encriptacion.csproj|C:\\Users\\manez\\source\\repos\\CRUD_Encriptacion\\crud_encriptacion\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6E2D1E0C-3CCA-4604-9724-34CD081F3E99}|CRUD_Encriptacion\\CRUD_Encriptacion.csproj|solutionrelative:crud_encriptacion\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6C8B57B-AFFB-B4DD-5034-42770964A7A1}|CRUD_Encriptacion\\CRUD_Encriptacion.csproj|c:\\users\\manez\\source\\repos\\crud_encriptacion\\crud_encriptacion\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6C8B57B-AFFB-B4DD-5034-42770964A7A1}|CRUD_Encriptacion\\CRUD_Encriptacion.csproj|solutionrelative:crud_encriptacion\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6C8B57B-AFFB-B4DD-5034-42770964A7A1}|CRUD_Encriptacion\\CRUD_Encriptacion.csproj|C:\\Users\\manez\\source\\repos\\CRUD_Encriptacion\\crud_encriptacion\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C6C8B57B-AFFB-B4DD-5034-42770964A7A1}|CRUD_Encriptacion\\CRUD_Encriptacion.csproj|solutionrelative:crud_encriptacion\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6C8B57B-AFFB-B4DD-5034-42770964A7A1}|CRUD_Encriptacion\\CRUD_Encriptacion.csproj|c:\\users\\manez\\source\\repos\\crud_encriptacion\\crud_encriptacion\\insert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6C8B57B-AFFB-B4DD-5034-42770964A7A1}|CRUD_Encriptacion\\CRUD_Encriptacion.csproj|solutionrelative:crud_encriptacion\\insert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6C8B57B-AFFB-B4DD-5034-42770964A7A1}|CRUD_Encriptacion\\CRUD_Encriptacion.csproj|c:\\users\\manez\\source\\repos\\crud_encriptacion\\crud_encriptacion\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6C8B57B-AFFB-B4DD-5034-42770964A7A1}|CRUD_Encriptacion\\CRUD_Encriptacion.csproj|solutionrelative:crud_encriptacion\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\manez\\source\\repos\\CRUD_Encriptacion\\CRUD_Encriptacion\\Form1.cs",
+              "RelativeDocumentMoniker": "CRUD_Encriptacion\\Form1.cs",
+              "ToolTip": "C:\\Users\\manez\\source\\repos\\CRUD_Encriptacion\\CRUD_Encriptacion\\Form1.cs",
+              "RelativeToolTip": "CRUD_Encriptacion\\Form1.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-08T16:41:31.008Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\manez\\source\\repos\\CRUD_Encriptacion\\CRUD_Encriptacion\\Form1.cs",
+              "RelativeDocumentMoniker": "CRUD_Encriptacion\\Form1.cs",
+              "ToolTip": "C:\\Users\\manez\\source\\repos\\CRUD_Encriptacion\\CRUD_Encriptacion\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CRUD_Encriptacion\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-09T02:27:51.148Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Insert.cs",
+              "DocumentMoniker": "C:\\Users\\manez\\source\\repos\\CRUD_Encriptacion\\CRUD_Encriptacion\\Insert.cs",
+              "RelativeDocumentMoniker": "CRUD_Encriptacion\\Insert.cs",
+              "ToolTip": "C:\\Users\\manez\\source\\repos\\CRUD_Encriptacion\\CRUD_Encriptacion\\Insert.cs",
+              "RelativeToolTip": "CRUD_Encriptacion\\Insert.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-08T16:43:31.574Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\manez\\source\\repos\\CRUD_Encriptacion\\CRUD_Encriptacion\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "CRUD_Encriptacion\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\manez\\source\\repos\\CRUD_Encriptacion\\CRUD_Encriptacion\\Form1.Designer.cs",
+              "RelativeToolTip": "CRUD_Encriptacion\\Form1.Designer.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAwwIAAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-08T16:37:55.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form2.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\manez\\source\\repos\\CRUD_Encriptacion\\CRUD_Encriptacion\\Form2.cs",
+              "RelativeDocumentMoniker": "CRUD_Encriptacion\\Form2.cs",
+              "ToolTip": "C:\\Users\\manez\\source\\repos\\CRUD_Encriptacion\\CRUD_Encriptacion\\Form2.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CRUD_Encriptacion\\Form2.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-08T16:58:17.611Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\manez\\source\\repos\\CRUD_Encriptacion\\CRUD_Encriptacion\\Form1.cs",
+              "RelativeDocumentMoniker": "CRUD_Encriptacion\\Form1.cs",
+              "ToolTip": "C:\\Users\\manez\\source\\repos\\CRUD_Encriptacion\\CRUD_Encriptacion\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CRUD_Encriptacion\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-08T16:40:59.101Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
