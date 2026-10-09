@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CRUD_Encriptacion")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f9bc626b110a9fbdb466f389df1ce8aea12a447b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c97a67992b7bb758ce5ae299e345300f42d204a7")]
 [assembly: System.Reflection.AssemblyProductAttribute("CRUD_Encriptacion")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CRUD_Encriptacion")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

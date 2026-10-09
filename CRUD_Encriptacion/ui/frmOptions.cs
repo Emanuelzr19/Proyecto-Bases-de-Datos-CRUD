@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace CRUD_Encriptacion
 {
-    public partial class Form2 : Form
+    public partial class frmOptions : Form
     {
-        public Form2()
+        public frmOptions()
         {
             InitializeComponent();
         }

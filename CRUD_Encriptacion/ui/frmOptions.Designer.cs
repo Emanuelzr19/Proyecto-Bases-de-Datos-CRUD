@@ -1,6 +1,6 @@
 ﻿namespace CRUD_Encriptacion
 {
-    partial class Form2
+    partial class frmOptions
     {
         /// <summary>
         /// Required designer variable.

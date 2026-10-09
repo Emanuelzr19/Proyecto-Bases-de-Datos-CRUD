@@ -1,11 +1,12 @@
-C:\Users\manez\source\repos\CRUD_Encriptacion\CRUD_Encriptacion\obj\Debug\net10.0-windows\CRUD_Encriptacion.Form1.resources
-C:\Users\manez\source\repos\CRUD_Encriptacion\CRUD_Encriptacion\obj\Debug\net10.0-windows\CRUD_Encriptacion.csproj.GenerateResource.cache
 C:\Users\manez\source\repos\CRUD_Encriptacion\CRUD_Encriptacion\bin\Debug\net10.0-windows\CRUD_Encriptacion.exe
 C:\Users\manez\source\repos\CRUD_Encriptacion\CRUD_Encriptacion\bin\Debug\net10.0-windows\CRUD_Encriptacion.deps.json
 C:\Users\manez\source\repos\CRUD_Encriptacion\CRUD_Encriptacion\bin\Debug\net10.0-windows\CRUD_Encriptacion.runtimeconfig.json
 C:\Users\manez\source\repos\CRUD_Encriptacion\CRUD_Encriptacion\bin\Debug\net10.0-windows\CRUD_Encriptacion.dll
 C:\Users\manez\source\repos\CRUD_Encriptacion\CRUD_Encriptacion\bin\Debug\net10.0-windows\CRUD_Encriptacion.pdb
 C:\Users\manez\source\repos\CRUD_Encriptacion\CRUD_Encriptacion\obj\Debug\net10.0-windows\CRUD_Encriptacion.Properties.Resources.resources
+C:\Users\manez\source\repos\CRUD_Encriptacion\CRUD_Encriptacion\obj\Debug\net10.0-windows\CRUD_Encriptacion.frmLogin.resources
+C:\Users\manez\source\repos\CRUD_Encriptacion\CRUD_Encriptacion\obj\Debug\net10.0-windows\CRUD_Encriptacion.frmOptions.resources
+C:\Users\manez\source\repos\CRUD_Encriptacion\CRUD_Encriptacion\obj\Debug\net10.0-windows\CRUD_Encriptacion.csproj.GenerateResource.cache
 C:\Users\manez\source\repos\CRUD_Encriptacion\CRUD_Encriptacion\obj\Debug\net10.0-windows\CRUD_Encriptacion.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\manez\source\repos\CRUD_Encriptacion\CRUD_Encriptacion\obj\Debug\net10.0-windows\CRUD_Encriptacion.AssemblyInfoInputs.cache
 C:\Users\manez\source\repos\CRUD_Encriptacion\CRUD_Encriptacion\obj\Debug\net10.0-windows\CRUD_Encriptacion.AssemblyInfo.cs
