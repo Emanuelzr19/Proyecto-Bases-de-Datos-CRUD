@@ -28,83 +28,181 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             txtUser = new TextBox();
             txtPassword = new TextBox();
             btnLogin = new Button();
-            btnExit = new Button();
-            label2 = new Label();
-            label3 = new Label();
+            panel1 = new Panel();
+            pictureBox1 = new PictureBox();
+            panel6 = new Panel();
+            label1 = new Label();
+            linkLabel1 = new LinkLabel();
+            btnMinimizar = new PictureBox();
+            btnCerrar = new PictureBox();
+            panel2 = new Panel();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnMinimizar).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnCerrar).BeginInit();
             SuspendLayout();
             // 
             // txtUser
             // 
-            txtUser.Location = new Point(158, 124);
+            txtUser.BackColor = Color.FromArgb(15, 15, 15);
+            txtUser.BorderStyle = BorderStyle.None;
+            txtUser.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtUser.ForeColor = Color.DimGray;
+            txtUser.Location = new Point(305, 63);
             txtUser.Name = "txtUser";
-            txtUser.Size = new Size(100, 23);
+            txtUser.Size = new Size(429, 20);
             txtUser.TabIndex = 1;
+            txtUser.Text = "USUARIO";
             txtUser.TextChanged += txtPassword_TextChanged;
-            txtUser.Enter += txtPassword_Enter;
+            txtUser.Enter += txtUser_Enter;
+            txtUser.Leave += txtUser_Leave;
             // 
             // txtPassword
             // 
-            txtPassword.Location = new Point(158, 193);
+            txtPassword.BackColor = Color.FromArgb(15, 15, 15);
+            txtPassword.BorderStyle = BorderStyle.None;
+            txtPassword.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtPassword.ForeColor = Color.DimGray;
+            txtPassword.Location = new Point(305, 123);
             txtPassword.Name = "txtPassword";
-            txtPassword.PasswordChar = '.';
-            txtPassword.Size = new Size(100, 23);
+            txtPassword.Size = new Size(429, 20);
             txtPassword.TabIndex = 2;
+            txtPassword.Text = "CONTRASEÑA";
             txtPassword.TextChanged += txtUser_TextChanged;
+            txtPassword.Enter += txtPassword_Enter;
+            txtPassword.Leave += txtPassword_Leave;
             // 
             // btnLogin
             // 
-            btnLogin.Location = new Point(65, 249);
+            btnLogin.BackColor = Color.FromArgb(40, 40, 40);
+            btnLogin.FlatAppearance.BorderSize = 0;
+            btnLogin.FlatAppearance.MouseDownBackColor = Color.FromArgb(28, 28, 28);
+            btnLogin.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
+            btnLogin.FlatStyle = FlatStyle.Flat;
+            btnLogin.Font = new Font("Arial", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnLogin.ForeColor = Color.LightGray;
+            btnLogin.Location = new Point(305, 222);
             btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(75, 23);
+            btnLogin.Size = new Size(429, 40);
             btnLogin.TabIndex = 3;
-            btnLogin.Text = "Login";
-            btnLogin.UseVisualStyleBackColor = true;
+            btnLogin.Text = "ACCEDER";
+            btnLogin.UseVisualStyleBackColor = false;
             btnLogin.Click += btnLogin_Click;
             // 
-            // btnExit
+            // panel1
             // 
-            btnExit.Location = new Point(200, 249);
-            btnExit.Name = "btnExit";
-            btnExit.Size = new Size(75, 23);
-            btnExit.TabIndex = 4;
-            btnExit.Text = "Exit";
-            btnExit.UseVisualStyleBackColor = true;
+            panel1.BackColor = Color.FromArgb(0, 122, 204);
+            panel1.Controls.Add(pictureBox1);
+            panel1.Dock = DockStyle.Left;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(250, 330);
+            panel1.TabIndex = 0;
             // 
-            // label2
+            // pictureBox1
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(65, 127);
-            label2.Name = "label2";
-            label2.Size = new Size(33, 15);
-            label2.TabIndex = 6;
-            label2.Text = "User:";
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(39, 79);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(170, 150);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
-            // label3
+            // panel6
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(53, 196);
-            label3.Name = "label3";
-            label3.Size = new Size(60, 15);
-            label3.TabIndex = 7;
-            label3.Text = "Password:";
+            panel6.BackColor = Color.DimGray;
+            panel6.Enabled = false;
+            panel6.Location = new Point(305, 149);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(429, 1);
+            panel6.TabIndex = 0;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Century Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.DimGray;
+            label1.Location = new Point(475, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(100, 33);
+            label1.TabIndex = 11;
+            label1.Text = "LOGIN";
+            // 
+            // linkLabel1
+            // 
+            linkLabel1.ActiveLinkColor = Color.FromArgb(0, 122, 204);
+            linkLabel1.AutoSize = true;
+            linkLabel1.Font = new Font("Century Gothic", 9.5F);
+            linkLabel1.LinkColor = Color.DimGray;
+            linkLabel1.Location = new Point(431, 276);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(199, 17);
+            linkLabel1.TabIndex = 0;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "¿Ha olvidado su contraseña?";
+            // 
+            // btnMinimizar
+            // 
+            btnMinimizar.Image = (Image)resources.GetObject("btnMinimizar.Image");
+            btnMinimizar.Location = new Point(724, 0);
+            btnMinimizar.Name = "btnMinimizar";
+            btnMinimizar.Size = new Size(24, 24);
+            btnMinimizar.SizeMode = PictureBoxSizeMode.AutoSize;
+            btnMinimizar.TabIndex = 14;
+            btnMinimizar.TabStop = false;
+            btnMinimizar.Click += btnMinimizar_Click;
+            // 
+            // btnCerrar
+            // 
+            btnCerrar.Image = (Image)resources.GetObject("btnCerrar.Image");
+            btnCerrar.Location = new Point(754, 0);
+            btnCerrar.Name = "btnCerrar";
+            btnCerrar.Size = new Size(24, 24);
+            btnCerrar.SizeMode = PictureBoxSizeMode.AutoSize;
+            btnCerrar.TabIndex = 15;
+            btnCerrar.TabStop = false;
+            btnCerrar.Click += btnCerrar_Click;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.DimGray;
+            panel2.Enabled = false;
+            panel2.Location = new Point(305, 89);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(429, 1);
+            panel2.TabIndex = 0;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(379, 351);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(btnExit);
+            BackColor = Color.FromArgb(15, 15, 15);
+            ClientSize = new Size(780, 330);
+            Controls.Add(btnCerrar);
+            Controls.Add(btnMinimizar);
+            Controls.Add(linkLabel1);
+            Controls.Add(label1);
+            Controls.Add(panel6);
+            Controls.Add(panel2);
+            Controls.Add(panel1);
             Controls.Add(btnLogin);
             Controls.Add(txtPassword);
             Controls.Add(txtUser);
-            Name = "Form1";
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "frmLogin";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             Load += Form1_Load;
+            MouseDown += frmLogin_MouseDown;
+            panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnMinimizar).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnCerrar).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -113,8 +211,14 @@
         private TextBox txtUser;
         private TextBox txtPassword;
         private Button btnLogin;
-        private Button btnExit;
-        private Label label2;
-        private Label label3;
+        private Panel panel1;
+        private Panel panel6;
+        private Label label1;
+        private PictureBox pictureBox1;
+        private LinkLabel linkLabel1;
+        private PictureBox pictureBox2;
+        private PictureBox btnMinimizar;
+        private PictureBox btnCerrar;
+        private Panel panel2;
     }
 }
