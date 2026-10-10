@@ -91,7 +91,7 @@
             label3.TabIndex = 7;
             label3.Text = "Password:";
             // 
-            // Form1
+            // frmLogin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -102,7 +102,7 @@
             Controls.Add(btnLogin);
             Controls.Add(txtPassword);
             Controls.Add(txtUser);
-            Name = "Form1";
+            Name = "frmLogin";
             Text = "Form1";
             Load += Form1_Load;
             ResumeLayout(false);

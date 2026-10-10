@@ -1,3 +1,6 @@
+using CRUD_Encriptacion.dataBase;
+using MySql.Data.MySqlClient;
+
 namespace CRUD_Encriptacion
 {
     public partial class frmLogin : Form
@@ -31,5 +34,9 @@ namespace CRUD_Encriptacion
         {
 
         }
+
+        
+        
     }
-}
+    }
+
