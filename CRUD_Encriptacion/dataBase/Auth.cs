@@ -1,4 +1,6 @@
-﻿using MySql.Data.MySqlClient; 
+﻿using MySql.Data.MySqlClient;
+using Org.BouncyCastle.Crypto.Generators;
+using BCrypt.Net;
 
 namespace CRUD_Encriptacion.dataBase
 {
