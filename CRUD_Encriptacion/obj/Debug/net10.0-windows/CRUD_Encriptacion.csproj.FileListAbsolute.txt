@@ -31,3 +31,5 @@ C:\Users\manez\source\repos\CRUD_Encriptacion\CRUD_Encriptacion\obj\Debug\net10.
 C:\Users\manez\source\repos\CRUD_Encriptacion\CRUD_Encriptacion\obj\Debug\net10.0-windows\CRUD_Encriptacion.pdb
 C:\Users\manez\source\repos\CRUD_Encriptacion\CRUD_Encriptacion\obj\Debug\net10.0-windows\CRUD_Encriptacion.genruntimeconfig.cache
 C:\Users\manez\source\repos\CRUD_Encriptacion\CRUD_Encriptacion\obj\Debug\net10.0-windows\ref\CRUD_Encriptacion.dll
+C:\Users\manez\source\repos\CRUD_Encriptacion\CRUD_Encriptacion\obj\Debug\net10.0-windows\CRUD_Encriptacion.ui.frmDatos.resources
+C:\Users\manez\source\repos\CRUD_Encriptacion\CRUD_Encriptacion\obj\Debug\net10.0-windows\CRUD_Encriptacion.ui.frmOptionsUser.resources

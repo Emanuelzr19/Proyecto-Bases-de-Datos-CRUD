@@ -14,5 +14,12 @@ namespace CRUD_Encriptacion
         {
             InitializeComponent();
         }
+
+        private void btnSalir_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmLogin frm=new frmLogin();
+            frm.Show();
+            this.Hide();
+        }
     }
 }
