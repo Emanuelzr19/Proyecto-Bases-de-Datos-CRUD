@@ -8,11 +8,14 @@ using System.Windows.Forms;
 
 namespace CRUD_Encriptacion
 {
-    public partial class frmOptions : Form
+    public partial class frmMenu : Form
     {
-        public frmOptions()
+        // Creamos una variable global en este formulario para guardar el rol
+        private string rolActual;
+        public frmMenu(string rol)
         {
             InitializeComponent();
+            rolActual = rol;
         }
     }
 }

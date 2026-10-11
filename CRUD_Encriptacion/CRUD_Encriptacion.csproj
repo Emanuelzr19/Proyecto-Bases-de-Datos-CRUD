@@ -27,4 +27,10 @@
     <Folder Include="logica\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.2.0" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="7.1.1" />
+    <PackageReference Include="MySql.Data" Version="26.7.0" />
+  </ItemGroup>
+
 </Project>

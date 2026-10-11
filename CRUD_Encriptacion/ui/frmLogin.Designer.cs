@@ -42,8 +42,7 @@
             txtUser.Name = "txtUser";
             txtUser.Size = new Size(100, 23);
             txtUser.TabIndex = 1;
-            txtUser.TextChanged += txtPassword_TextChanged;
-            txtUser.Enter += txtPassword_Enter;
+            
             // 
             // txtPassword
             // 
@@ -52,11 +51,11 @@
             txtPassword.PasswordChar = '.';
             txtPassword.Size = new Size(100, 23);
             txtPassword.TabIndex = 2;
-            txtPassword.TextChanged += txtUser_TextChanged;
+          
             // 
             // btnLogin
             // 
-            btnLogin.Location = new Point(65, 249);
+            btnLogin.Location = new Point(197, 249);
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(75, 23);
             btnLogin.TabIndex = 3;
@@ -66,7 +65,7 @@
             // 
             // btnExit
             // 
-            btnExit.Location = new Point(200, 249);
+            btnExit.Location = new Point(65, 249);
             btnExit.Name = "btnExit";
             btnExit.Size = new Size(75, 23);
             btnExit.TabIndex = 4;
@@ -91,7 +90,7 @@
             label3.TabIndex = 7;
             label3.Text = "Password:";
             // 
-            // Form1
+            // frmLogin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -102,9 +101,9 @@
             Controls.Add(btnLogin);
             Controls.Add(txtPassword);
             Controls.Add(txtUser);
-            Name = "Form1";
+            Name = "frmLogin";
             Text = "Form1";
-            Load += Form1_Load;
+            
             ResumeLayout(false);
             PerformLayout();
         }
