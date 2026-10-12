@@ -10,9 +10,12 @@ namespace CRUD_Encriptacion
 {
     public partial class frmOptions : Form
     {
-        public frmOptions()
+        //Variable global para guardar el rol
+        private string rolActual;
+        public frmOptions(string rol)
         {
             InitializeComponent();
+            rolActual = rol;
         }
 
         private void btnSalir_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

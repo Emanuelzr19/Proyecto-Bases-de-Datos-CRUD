@@ -31,7 +31,52 @@ namespace CRUD_Encriptacion
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            // 1. Generamos un hash con tu propia librería
+            /*string hashPerfecto = BCrypt.Net.BCrypt.HashPassword("admin123");
 
+            // 2. Lo copiamos automáticamente a tu portapapeles (Ctrl+C automático)
+            Clipboard.SetText(hashPerfecto);
+
+            // 3. Mostramos un aviso y detenemos el código
+            MessageBox.Show("El Hash compatible ha sido copiado a tu portapapeles. Pégalo en tu base de datos.");
+            return;*/
+
+
+            //CODIGO NORMAL
+            // 1. Capturar los datos eliminando espacios en blanco al inicio o final
+            string usuario = txtUser.Text.Trim();
+            string password = txtPassword.Text.Trim();
+
+            // 2. Validación del llenado de los espacios requeridos
+            if (string.IsNullOrEmpty(usuario) || string.IsNullOrEmpty(password))
+            {
+                MessageBox.Show("Por favor, llena todos los campos para ingresar.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return; // Detiene el código aquí para no hacer consultas a la base de datos 
+            }
+
+            // 3. Llamar al backend (Clase Auth) 
+            Auth authDB = new Auth();
+
+            // Este método devuelve "Administrador", "Empleado" o null
+            string rolUsuario = authDB.ValidarLogin(usuario, password);
+
+            // 4. Evaluar la respuesta del backend
+            if (rolUsuario != null)
+            {
+                MessageBox.Show($"¡Bienvenido! Has ingresado con el rol de: {rolUsuario}.", "Acceso concedido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                // 5. Abrir el menú principal y pasarle el rol. 
+                frmOptions ventanaPrincipal = new frmOptions(rolUsuario);
+                ventanaPrincipal.Show();
+
+                // 6. Ocultar la ventana actual (Login)
+                this.Hide();
+            }
+            else
+            {
+                // Si devuelve null, significa que falló el usuario o la contraseña
+                MessageBox.Show("Usuario o contraseña incorrectos. Intenta de nuevo.", "Error de acceso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void txtUser_Enter(object sender, EventArgs e)

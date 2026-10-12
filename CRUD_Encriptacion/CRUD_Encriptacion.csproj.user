@@ -13,5 +13,8 @@
     <Compile Update="ui\frmOptionsUser.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="ui\frmUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
