@@ -14,5 +14,6 @@ namespace CRUD_Encriptacion.ui
         {
             InitializeComponent();
         }
+
     }
 }

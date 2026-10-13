@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDatos));
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
@@ -60,7 +61,25 @@
             textBox12 = new TextBox();
             textBox13 = new TextBox();
             textBox14 = new TextBox();
+            pictureBox1 = new PictureBox();
+            panel2 = new Panel();
+            panel3 = new Panel();
+            panel4 = new Panel();
+            panel5 = new Panel();
+            button1 = new Button();
+            panel6 = new Panel();
+            panel7 = new Panel();
+            panel8 = new Panel();
+            panel9 = new Panel();
+            panel10 = new Panel();
+            panel11 = new Panel();
+            panel12 = new Panel();
+            panel13 = new Panel();
+            panel14 = new Panel();
+            panel15 = new Panel();
+            panel16 = new Panel();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label3
@@ -68,10 +87,10 @@
             label3.AutoSize = true;
             label3.Font = new Font("Century Gothic", 12F);
             label3.ForeColor = Color.FromArgb(64, 64, 64);
-            label3.Location = new Point(50, 80);
+            label3.Location = new Point(45, 83);
             label3.Name = "label3";
             label3.Size = new Size(70, 21);
-            label3.TabIndex = 2;
+            label3.TabIndex = 0;
             label3.Text = "Usuario:";
             // 
             // label4
@@ -79,10 +98,10 @@
             label4.AutoSize = true;
             label4.Font = new Font("Century Gothic", 12F);
             label4.ForeColor = Color.FromArgb(64, 64, 64);
-            label4.Location = new Point(50, 118);
+            label4.Location = new Point(45, 121);
             label4.Name = "label4";
             label4.Size = new Size(107, 21);
-            label4.TabIndex = 3;
+            label4.TabIndex = 0;
             label4.Text = "Contraseña:";
             // 
             // label5
@@ -90,7 +109,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Century Gothic", 12F);
             label5.ForeColor = Color.FromArgb(64, 64, 64);
-            label5.Location = new Point(427, 80);
+            label5.Location = new Point(431, 83);
             label5.Name = "label5";
             label5.Size = new Size(37, 21);
             label5.TabIndex = 4;
@@ -101,10 +120,10 @@
             label6.AutoSize = true;
             label6.Font = new Font("Century Gothic", 12F);
             label6.ForeColor = Color.FromArgb(64, 64, 64);
-            label6.Location = new Point(50, 160);
+            label6.Location = new Point(45, 161);
             label6.Name = "label6";
             label6.Size = new Size(77, 21);
-            label6.TabIndex = 5;
+            label6.TabIndex = 0;
             label6.Text = "Nombre:";
             // 
             // label7
@@ -112,10 +131,10 @@
             label7.AutoSize = true;
             label7.Font = new Font("Century Gothic", 12F);
             label7.ForeColor = Color.FromArgb(64, 64, 64);
-            label7.Location = new Point(50, 200);
+            label7.Location = new Point(45, 203);
             label7.Name = "label7";
             label7.Size = new Size(84, 21);
-            label7.TabIndex = 6;
+            label7.TabIndex = 0;
             label7.Text = "Apellidos:";
             // 
             // label8
@@ -123,7 +142,7 @@
             label8.AutoSize = true;
             label8.Font = new Font("Century Gothic", 12F);
             label8.ForeColor = Color.FromArgb(64, 64, 64);
-            label8.Location = new Point(427, 118);
+            label8.Location = new Point(434, 331);
             label8.Name = "label8";
             label8.Size = new Size(55, 21);
             label8.TabIndex = 7;
@@ -134,7 +153,7 @@
             label9.AutoSize = true;
             label9.Font = new Font("Century Gothic", 12F);
             label9.ForeColor = Color.FromArgb(64, 64, 64);
-            label9.Location = new Point(427, 160);
+            label9.Location = new Point(45, 331);
             label9.Name = "label9";
             label9.Size = new Size(80, 21);
             label9.TabIndex = 8;
@@ -145,10 +164,10 @@
             label10.AutoSize = true;
             label10.Font = new Font("Century Gothic", 12F);
             label10.ForeColor = Color.FromArgb(64, 64, 64);
-            label10.Location = new Point(50, 283);
+            label10.Location = new Point(45, 286);
             label10.Name = "label10";
             label10.Size = new Size(87, 21);
-            label10.TabIndex = 9;
+            label10.TabIndex = 0;
             label10.Text = "Direccion:";
             // 
             // label11
@@ -156,10 +175,10 @@
             label11.AutoSize = true;
             label11.Font = new Font("Century Gothic", 12F);
             label11.ForeColor = Color.FromArgb(64, 64, 64);
-            label11.Location = new Point(50, 242);
+            label11.Location = new Point(45, 249);
             label11.Name = "label11";
             label11.Size = new Size(73, 21);
-            label11.TabIndex = 10;
+            label11.TabIndex = 0;
             label11.Text = "Ciudad:";
             // 
             // label12
@@ -167,7 +186,7 @@
             label12.AutoSize = true;
             label12.Font = new Font("Century Gothic", 12F);
             label12.ForeColor = Color.FromArgb(64, 64, 64);
-            label12.Location = new Point(427, 242);
+            label12.Location = new Point(434, 247);
             label12.Name = "label12";
             label12.Size = new Size(68, 21);
             label12.TabIndex = 11;
@@ -178,7 +197,7 @@
             label13.AutoSize = true;
             label13.Font = new Font("Century Gothic", 12F);
             label13.ForeColor = Color.FromArgb(64, 64, 64);
-            label13.Location = new Point(50, 332);
+            label13.Location = new Point(426, 166);
             label13.Name = "label13";
             label13.Size = new Size(183, 21);
             label13.TabIndex = 12;
@@ -189,7 +208,7 @@
             label14.AutoSize = true;
             label14.Font = new Font("Century Gothic", 12F);
             label14.ForeColor = Color.FromArgb(64, 64, 64);
-            label14.Location = new Point(609, 80);
+            label14.Location = new Point(426, 125);
             label14.Name = "label14";
             label14.Size = new Size(66, 21);
             label14.TabIndex = 13;
@@ -200,7 +219,7 @@
             label15.AutoSize = true;
             label15.Font = new Font("Century Gothic", 12F);
             label15.ForeColor = Color.FromArgb(64, 64, 64);
-            label15.Location = new Point(50, 419);
+            label15.Location = new Point(102, 410);
             label15.Name = "label15";
             label15.Size = new Size(65, 21);
             label15.TabIndex = 14;
@@ -211,7 +230,7 @@
             label16.AutoSize = true;
             label16.Font = new Font("Century Gothic", 12F);
             label16.ForeColor = Color.FromArgb(64, 64, 64);
-            label16.Location = new Point(427, 419);
+            label16.Location = new Point(497, 408);
             label16.Name = "label16";
             label16.Size = new Size(42, 21);
             label16.TabIndex = 15;
@@ -222,7 +241,7 @@
             label17.AutoSize = true;
             label17.Font = new Font("Century Gothic", 12F);
             label17.ForeColor = Color.FromArgb(64, 64, 64);
-            label17.Location = new Point(50, 459);
+            label17.Location = new Point(102, 453);
             label17.Name = "label17";
             label17.Size = new Size(149, 21);
             label17.TabIndex = 16;
@@ -250,116 +269,318 @@
             // 
             // comboBox1
             // 
+            comboBox1.BackColor = Color.FromArgb(224, 224, 224);
+            comboBox1.FlatStyle = FlatStyle.Flat;
+            comboBox1.Font = new Font("Century Gothic", 12F);
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(470, 78);
+            comboBox1.Location = new Point(506, 78);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(121, 23);
+            comboBox1.Size = new Size(121, 29);
             comboBox1.TabIndex = 18;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(126, 78);
+            textBox1.BackColor = Color.FromArgb(224, 224, 224);
+            textBox1.BorderStyle = BorderStyle.None;
+            textBox1.Font = new Font("Century Gothic", 12F);
+            textBox1.Location = new Point(121, 75);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(266, 23);
+            textBox1.Size = new Size(266, 20);
             textBox1.TabIndex = 19;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(155, 116);
+            textBox2.BackColor = Color.FromArgb(224, 224, 224);
+            textBox2.BorderStyle = BorderStyle.None;
+            textBox2.Font = new Font("Century Gothic", 12F);
+            textBox2.Location = new Point(153, 113);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(246, 23);
+            textBox2.Size = new Size(246, 20);
             textBox2.TabIndex = 20;
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(126, 158);
+            textBox3.BackColor = Color.FromArgb(224, 224, 224);
+            textBox3.BorderStyle = BorderStyle.None;
+            textBox3.Font = new Font("Century Gothic", 12F);
+            textBox3.Location = new Point(128, 155);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(275, 23);
-            textBox3.TabIndex = 21;
+            textBox3.Size = new Size(275, 20);
+            textBox3.TabIndex = 0;
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(140, 198);
+            textBox4.BackColor = Color.FromArgb(224, 224, 224);
+            textBox4.BorderStyle = BorderStyle.None;
+            textBox4.Font = new Font("Century Gothic", 12F);
+            textBox4.Location = new Point(135, 197);
             textBox4.Name = "textBox4";
-            textBox4.Size = new Size(367, 23);
+            textBox4.Size = new Size(367, 20);
             textBox4.TabIndex = 22;
             // 
             // textBox5
             // 
-            textBox5.Location = new Point(129, 240);
+            textBox5.BackColor = Color.FromArgb(224, 224, 224);
+            textBox5.BorderStyle = BorderStyle.None;
+            textBox5.Font = new Font("Century Gothic", 12F);
+            textBox5.Location = new Point(124, 238);
             textBox5.Name = "textBox5";
-            textBox5.Size = new Size(292, 23);
+            textBox5.Size = new Size(292, 20);
             textBox5.TabIndex = 23;
             // 
             // textBox6
             // 
-            textBox6.Location = new Point(146, 281);
+            textBox6.BackColor = Color.FromArgb(224, 224, 224);
+            textBox6.BorderStyle = BorderStyle.None;
+            textBox6.Font = new Font("Century Gothic", 12F);
+            textBox6.Location = new Point(141, 280);
             textBox6.Name = "textBox6";
-            textBox6.Size = new Size(361, 23);
+            textBox6.Size = new Size(361, 20);
             textBox6.TabIndex = 24;
             // 
             // textBox7
             // 
-            textBox7.Location = new Point(239, 330);
+            textBox7.BackColor = Color.FromArgb(224, 224, 224);
+            textBox7.BorderStyle = BorderStyle.None;
+            textBox7.Font = new Font("Century Gothic", 12F);
+            textBox7.Location = new Point(616, 157);
             textBox7.Name = "textBox7";
-            textBox7.Size = new Size(246, 23);
+            textBox7.Size = new Size(153, 20);
             textBox7.TabIndex = 25;
             // 
             // textBox8
             // 
-            textBox8.Location = new Point(488, 118);
+            textBox8.BackColor = Color.FromArgb(224, 224, 224);
+            textBox8.BorderStyle = BorderStyle.None;
+            textBox8.Font = new Font("Century Gothic", 12F);
+            textBox8.Location = new Point(493, 323);
             textBox8.Name = "textBox8";
-            textBox8.Size = new Size(339, 23);
+            textBox8.Size = new Size(326, 20);
             textBox8.TabIndex = 26;
             // 
             // textBox9
             // 
-            textBox9.Location = new Point(513, 158);
+            textBox9.BackColor = Color.FromArgb(224, 224, 224);
+            textBox9.BorderStyle = BorderStyle.None;
+            textBox9.Font = new Font("Century Gothic", 12F);
+            textBox9.Location = new Point(138, 322);
             textBox9.Name = "textBox9";
-            textBox9.Size = new Size(236, 23);
+            textBox9.Size = new Size(236, 20);
             textBox9.TabIndex = 27;
             // 
             // textBox10
             // 
-            textBox10.Location = new Point(121, 417);
+            textBox10.BackColor = Color.FromArgb(224, 224, 224);
+            textBox10.BorderStyle = BorderStyle.None;
+            textBox10.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBox10.Location = new Point(173, 403);
             textBox10.Name = "textBox10";
-            textBox10.Size = new Size(215, 23);
+            textBox10.Size = new Size(215, 20);
             textBox10.TabIndex = 28;
             // 
             // textBox11
             // 
-            textBox11.Location = new Point(205, 461);
+            textBox11.BackColor = Color.FromArgb(224, 224, 224);
+            textBox11.BorderStyle = BorderStyle.None;
+            textBox11.Font = new Font("Century Gothic", 12F);
+            textBox11.Location = new Point(257, 447);
             textBox11.Name = "textBox11";
-            textBox11.Size = new Size(375, 23);
+            textBox11.Size = new Size(375, 20);
             textBox11.TabIndex = 29;
             // 
             // textBox12
             // 
-            textBox12.Location = new Point(475, 419);
+            textBox12.BackColor = Color.FromArgb(224, 224, 224);
+            textBox12.BorderStyle = BorderStyle.None;
+            textBox12.Font = new Font("Century Gothic", 12F);
+            textBox12.Location = new Point(545, 401);
             textBox12.Name = "textBox12";
-            textBox12.Size = new Size(274, 23);
+            textBox12.Size = new Size(274, 20);
             textBox12.TabIndex = 30;
             // 
             // textBox13
             // 
-            textBox13.Location = new Point(501, 240);
+            textBox13.BackColor = Color.FromArgb(224, 224, 224);
+            textBox13.BorderStyle = BorderStyle.None;
+            textBox13.Font = new Font("Century Gothic", 12F);
+            textBox13.Location = new Point(508, 238);
             textBox13.Name = "textBox13";
-            textBox13.Size = new Size(207, 23);
+            textBox13.Size = new Size(207, 20);
             textBox13.TabIndex = 31;
             // 
             // textBox14
             // 
-            textBox14.Location = new Point(681, 78);
+            textBox14.BackColor = Color.FromArgb(224, 224, 224);
+            textBox14.BorderStyle = BorderStyle.None;
+            textBox14.Font = new Font("Century Gothic", 12F);
+            textBox14.Location = new Point(507, 118);
             textBox14.Name = "textBox14";
-            textBox14.Size = new Size(160, 23);
+            textBox14.Size = new Size(208, 20);
             textBox14.TabIndex = 32;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(736, 50);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(120, 92);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 33;
+            pictureBox1.TabStop = false;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.FromArgb(64, 64, 64);
+            panel2.Location = new Point(121, 100);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(275, 1);
+            panel2.TabIndex = 34;
+            // 
+            // panel3
+            // 
+            panel3.BackColor = Color.FromArgb(64, 64, 64);
+            panel3.Location = new Point(154, 138);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(245, 1);
+            panel3.TabIndex = 35;
+            // 
+            // panel4
+            // 
+            panel4.BackColor = Color.FromArgb(64, 64, 64);
+            panel4.Location = new Point(128, 180);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(275, 1);
+            panel4.TabIndex = 36;
+            // 
+            // panel5
+            // 
+            panel5.BackColor = Color.FromArgb(64, 64, 64);
+            panel5.Location = new Point(135, 224);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(367, 1);
+            panel5.TabIndex = 37;
+            // 
+            // button1
+            // 
+            button1.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.Location = new Point(367, 497);
+            button1.Name = "button1";
+            button1.Size = new Size(193, 33);
+            button1.TabIndex = 38;
+            button1.Text = "Registrar";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // panel6
+            // 
+            panel6.BackColor = Color.FromArgb(64, 64, 64);
+            panel6.Location = new Point(124, 265);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(292, 1);
+            panel6.TabIndex = 39;
+            // 
+            // panel7
+            // 
+            panel7.BackColor = Color.FromArgb(64, 64, 64);
+            panel7.Location = new Point(141, 307);
+            panel7.Name = "panel7";
+            panel7.Size = new Size(361, 1);
+            panel7.TabIndex = 40;
+            // 
+            // panel8
+            // 
+            panel8.BackColor = Color.FromArgb(64, 64, 64);
+            panel8.Location = new Point(138, 349);
+            panel8.Name = "panel8";
+            panel8.Size = new Size(236, 1);
+            panel8.TabIndex = 41;
+            // 
+            // panel9
+            // 
+            panel9.BackColor = Color.DimGray;
+            panel9.Location = new Point(12, 386);
+            panel9.Name = "panel9";
+            panel9.Size = new Size(856, 3);
+            panel9.TabIndex = 42;
+            // 
+            // panel10
+            // 
+            panel10.BackColor = Color.FromArgb(64, 64, 64);
+            panel10.Location = new Point(503, 142);
+            panel10.Name = "panel10";
+            panel10.Size = new Size(208, 1);
+            panel10.TabIndex = 43;
+            // 
+            // panel11
+            // 
+            panel11.BackColor = Color.FromArgb(64, 64, 64);
+            panel11.Location = new Point(616, 184);
+            panel11.Name = "panel11";
+            panel11.Size = new Size(153, 1);
+            panel11.TabIndex = 44;
+            // 
+            // panel12
+            // 
+            panel12.BackColor = Color.FromArgb(64, 64, 64);
+            panel12.Location = new Point(508, 265);
+            panel12.Name = "panel12";
+            panel12.Size = new Size(207, 1);
+            panel12.TabIndex = 45;
+            // 
+            // panel13
+            // 
+            panel13.BackColor = Color.FromArgb(64, 64, 64);
+            panel13.Location = new Point(493, 350);
+            panel13.Name = "panel13";
+            panel13.Size = new Size(326, 1);
+            panel13.TabIndex = 46;
+            // 
+            // panel14
+            // 
+            panel14.BackColor = Color.FromArgb(64, 64, 64);
+            panel14.Location = new Point(173, 430);
+            panel14.Name = "panel14";
+            panel14.Size = new Size(214, 1);
+            panel14.TabIndex = 47;
+            // 
+            // panel15
+            // 
+            panel15.BackColor = Color.FromArgb(64, 64, 64);
+            panel15.Location = new Point(545, 428);
+            panel15.Name = "panel15";
+            panel15.Size = new Size(274, 1);
+            panel15.TabIndex = 48;
+            // 
+            // panel16
+            // 
+            panel16.BackColor = Color.FromArgb(64, 64, 64);
+            panel16.Location = new Point(257, 474);
+            panel16.Name = "panel16";
+            panel16.Size = new Size(375, 1);
+            panel16.TabIndex = 49;
             // 
             // frmDatos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(224, 224, 224);
-            ClientSize = new Size(868, 532);
+            ClientSize = new Size(888, 562);
+            Controls.Add(panel16);
+            Controls.Add(panel15);
+            Controls.Add(panel14);
+            Controls.Add(panel13);
+            Controls.Add(panel12);
+            Controls.Add(panel11);
+            Controls.Add(panel10);
+            Controls.Add(panel9);
+            Controls.Add(panel8);
+            Controls.Add(panel7);
+            Controls.Add(panel6);
+            Controls.Add(button1);
+            Controls.Add(panel5);
+            Controls.Add(panel4);
+            Controls.Add(panel3);
+            Controls.Add(panel2);
+            Controls.Add(pictureBox1);
             Controls.Add(textBox14);
             Controls.Add(textBox13);
             Controls.Add(textBox12);
@@ -396,6 +617,7 @@
             Text = "frmDatos";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -433,5 +655,22 @@
         private TextBox textBox12;
         private TextBox textBox13;
         private TextBox textBox14;
+        private PictureBox pictureBox1;
+        private Panel panel2;
+        private Panel panel3;
+        private Panel panel4;
+        private Panel panel5;
+        private Button button1;
+        private Panel panel6;
+        private Panel panel7;
+        private Panel panel8;
+        private Panel panel9;
+        private Panel panel10;
+        private Panel panel11;
+        private Panel panel12;
+        private Panel panel13;
+        private Panel panel14;
+        private Panel panel15;
+        private Panel panel16;
     }
 }
