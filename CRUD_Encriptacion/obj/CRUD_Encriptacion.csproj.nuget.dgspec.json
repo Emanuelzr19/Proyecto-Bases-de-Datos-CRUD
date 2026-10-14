@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\manez\\source\\repos\\CRUD_Encriptacion\\CRUD_Encriptacion\\CRUD_Encriptacion.csproj": {}
+    "C:\\Users\\Luis Eduardo\\source\\repos\\Proyecto-Bases-de-Datos-CRUD\\CRUD_Encriptacion\\CRUD_Encriptacion.csproj": {}
   },
   "projects": {
-    "C:\\Users\\manez\\source\\repos\\CRUD_Encriptacion\\CRUD_Encriptacion\\CRUD_Encriptacion.csproj": {
+    "C:\\Users\\Luis Eduardo\\source\\repos\\Proyecto-Bases-de-Datos-CRUD\\CRUD_Encriptacion\\CRUD_Encriptacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\manez\\source\\repos\\CRUD_Encriptacion\\CRUD_Encriptacion\\CRUD_Encriptacion.csproj",
+        "projectUniqueName": "C:\\Users\\Luis Eduardo\\source\\repos\\Proyecto-Bases-de-Datos-CRUD\\CRUD_Encriptacion\\CRUD_Encriptacion.csproj",
         "projectName": "CRUD_Encriptacion",
-        "projectPath": "C:\\Users\\manez\\source\\repos\\CRUD_Encriptacion\\CRUD_Encriptacion\\CRUD_Encriptacion.csproj",
-        "packagesPath": "C:\\Users\\manez\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\manez\\source\\repos\\CRUD_Encriptacion\\CRUD_Encriptacion\\obj\\",
+        "projectPath": "C:\\Users\\Luis Eduardo\\source\\repos\\Proyecto-Bases-de-Datos-CRUD\\CRUD_Encriptacion\\CRUD_Encriptacion.csproj",
+        "packagesPath": "C:\\Users\\Luis Eduardo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Luis Eduardo\\source\\repos\\Proyecto-Bases-de-Datos-CRUD\\CRUD_Encriptacion\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\manez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Luis Eduardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

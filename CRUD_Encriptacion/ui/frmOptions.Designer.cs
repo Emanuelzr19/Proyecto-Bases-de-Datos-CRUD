@@ -61,6 +61,7 @@
             btnVer.TextAlign = ContentAlignment.MiddleLeft;
             btnVer.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnVer.UseVisualStyleBackColor = false;
+            btnVer.Click += btnVer_Click;
             // 
             // panel1
             // 
@@ -120,6 +121,7 @@
             btnAgregar.TextAlign = ContentAlignment.MiddleLeft;
             btnAgregar.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnAgregar.UseVisualStyleBackColor = false;
+            btnAgregar.Click += btnAgregar_Click;
             // 
             // btnActualizar
             // 
@@ -156,6 +158,7 @@
             btnEliminar.TextAlign = ContentAlignment.MiddleLeft;
             btnEliminar.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnEliminar.UseVisualStyleBackColor = false;
+            btnEliminar.Click += btnEliminar_Click;
             // 
             // btnSalir
             // 

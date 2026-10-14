@@ -46,38 +46,38 @@
             label17 = new Label();
             panel1 = new Panel();
             label1 = new Label();
-            comboBox1 = new ComboBox();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
-            textBox7 = new TextBox();
-            textBox8 = new TextBox();
-            textBox9 = new TextBox();
-            textBox10 = new TextBox();
-            textBox11 = new TextBox();
-            textBox12 = new TextBox();
-            textBox13 = new TextBox();
-            textBox14 = new TextBox();
+            cmbRol = new ComboBox();
+            txtUser = new TextBox();
+            txtPassword = new TextBox();
+            txtNombre = new TextBox();
+            txtApellidos = new TextBox();
+            txtCiudad = new TextBox();
+            txtDireccion = new TextBox();
+            txtEstado = new TextBox();
+            txtEmail = new TextBox();
+            txtTelefono = new TextBox();
+            txtSalario = new TextBox();
+            txtCuenta = new TextBox();
+            txtNSS = new TextBox();
+            txtPuesto = new TextBox();
             pictureBox1 = new PictureBox();
             panel2 = new Panel();
             panel3 = new Panel();
             panel4 = new Panel();
             panel5 = new Panel();
-            button1 = new Button();
+            btnRegistrar = new Button();
             panel6 = new Panel();
             panel7 = new Panel();
             panel8 = new Panel();
             panel9 = new Panel();
             panel10 = new Panel();
-            panel11 = new Panel();
-            panel12 = new Panel();
             panel13 = new Panel();
             panel14 = new Panel();
             panel15 = new Panel();
             panel16 = new Panel();
+            dtpFechaNac = new DateTimePicker();
+            panel17 = new Panel();
+            panel11 = new Panel();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -267,156 +267,147 @@
             label1.TabIndex = 18;
             label1.Text = "Datos Personales";
             // 
-            // comboBox1
+            // cmbRol
             // 
-            comboBox1.BackColor = Color.FromArgb(224, 224, 224);
-            comboBox1.FlatStyle = FlatStyle.Flat;
-            comboBox1.Font = new Font("Century Gothic", 12F);
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(506, 78);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(121, 29);
-            comboBox1.TabIndex = 18;
+            cmbRol.BackColor = Color.FromArgb(224, 224, 224);
+            cmbRol.FlatStyle = FlatStyle.Flat;
+            cmbRol.Font = new Font("Century Gothic", 12F);
+            cmbRol.FormattingEnabled = true;
+            cmbRol.Items.AddRange(new object[] { "Administrador", "Empleado" });
+            cmbRol.Location = new Point(506, 78);
+            cmbRol.Name = "cmbRol";
+            cmbRol.Size = new Size(121, 29);
+            cmbRol.TabIndex = 18;
             // 
-            // textBox1
+            // txtUser
             // 
-            textBox1.BackColor = Color.FromArgb(224, 224, 224);
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Font = new Font("Century Gothic", 12F);
-            textBox1.Location = new Point(121, 75);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(266, 20);
-            textBox1.TabIndex = 19;
+            txtUser.BackColor = Color.FromArgb(224, 224, 224);
+            txtUser.BorderStyle = BorderStyle.None;
+            txtUser.Font = new Font("Century Gothic", 12F);
+            txtUser.Location = new Point(121, 75);
+            txtUser.Name = "txtUser";
+            txtUser.Size = new Size(266, 20);
+            txtUser.TabIndex = 19;
             // 
-            // textBox2
+            // txtPassword
             // 
-            textBox2.BackColor = Color.FromArgb(224, 224, 224);
-            textBox2.BorderStyle = BorderStyle.None;
-            textBox2.Font = new Font("Century Gothic", 12F);
-            textBox2.Location = new Point(153, 113);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(246, 20);
-            textBox2.TabIndex = 20;
+            txtPassword.BackColor = Color.FromArgb(224, 224, 224);
+            txtPassword.BorderStyle = BorderStyle.None;
+            txtPassword.Font = new Font("Century Gothic", 12F);
+            txtPassword.Location = new Point(153, 113);
+            txtPassword.Name = "txtPassword";
+            txtPassword.Size = new Size(246, 20);
+            txtPassword.TabIndex = 20;
             // 
-            // textBox3
+            // txtNombre
             // 
-            textBox3.BackColor = Color.FromArgb(224, 224, 224);
-            textBox3.BorderStyle = BorderStyle.None;
-            textBox3.Font = new Font("Century Gothic", 12F);
-            textBox3.Location = new Point(128, 155);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(275, 20);
-            textBox3.TabIndex = 0;
+            txtNombre.BackColor = Color.FromArgb(224, 224, 224);
+            txtNombre.BorderStyle = BorderStyle.None;
+            txtNombre.Font = new Font("Century Gothic", 12F);
+            txtNombre.Location = new Point(128, 155);
+            txtNombre.Name = "txtNombre";
+            txtNombre.Size = new Size(275, 20);
+            txtNombre.TabIndex = 0;
             // 
-            // textBox4
+            // txtApellidos
             // 
-            textBox4.BackColor = Color.FromArgb(224, 224, 224);
-            textBox4.BorderStyle = BorderStyle.None;
-            textBox4.Font = new Font("Century Gothic", 12F);
-            textBox4.Location = new Point(135, 197);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(367, 20);
-            textBox4.TabIndex = 22;
+            txtApellidos.BackColor = Color.FromArgb(224, 224, 224);
+            txtApellidos.BorderStyle = BorderStyle.None;
+            txtApellidos.Font = new Font("Century Gothic", 12F);
+            txtApellidos.Location = new Point(135, 197);
+            txtApellidos.Name = "txtApellidos";
+            txtApellidos.Size = new Size(367, 20);
+            txtApellidos.TabIndex = 22;
             // 
-            // textBox5
+            // txtCiudad
             // 
-            textBox5.BackColor = Color.FromArgb(224, 224, 224);
-            textBox5.BorderStyle = BorderStyle.None;
-            textBox5.Font = new Font("Century Gothic", 12F);
-            textBox5.Location = new Point(124, 238);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(292, 20);
-            textBox5.TabIndex = 23;
+            txtCiudad.BackColor = Color.FromArgb(224, 224, 224);
+            txtCiudad.BorderStyle = BorderStyle.None;
+            txtCiudad.Font = new Font("Century Gothic", 12F);
+            txtCiudad.Location = new Point(124, 238);
+            txtCiudad.Name = "txtCiudad";
+            txtCiudad.Size = new Size(292, 20);
+            txtCiudad.TabIndex = 23;
             // 
-            // textBox6
+            // txtDireccion
             // 
-            textBox6.BackColor = Color.FromArgb(224, 224, 224);
-            textBox6.BorderStyle = BorderStyle.None;
-            textBox6.Font = new Font("Century Gothic", 12F);
-            textBox6.Location = new Point(141, 280);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(361, 20);
-            textBox6.TabIndex = 24;
+            txtDireccion.BackColor = Color.FromArgb(224, 224, 224);
+            txtDireccion.BorderStyle = BorderStyle.None;
+            txtDireccion.Font = new Font("Century Gothic", 12F);
+            txtDireccion.Location = new Point(141, 280);
+            txtDireccion.Name = "txtDireccion";
+            txtDireccion.Size = new Size(361, 20);
+            txtDireccion.TabIndex = 24;
             // 
-            // textBox7
+            // txtEstado
             // 
-            textBox7.BackColor = Color.FromArgb(224, 224, 224);
-            textBox7.BorderStyle = BorderStyle.None;
-            textBox7.Font = new Font("Century Gothic", 12F);
-            textBox7.Location = new Point(616, 157);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(153, 20);
-            textBox7.TabIndex = 25;
+            txtEstado.BackColor = Color.FromArgb(224, 224, 224);
+            txtEstado.BorderStyle = BorderStyle.None;
+            txtEstado.Font = new Font("Century Gothic", 12F);
+            txtEstado.Location = new Point(507, 248);
+            txtEstado.Name = "txtEstado";
+            txtEstado.Size = new Size(204, 20);
+            txtEstado.TabIndex = 25;
             // 
-            // textBox8
+            // txtEmail
             // 
-            textBox8.BackColor = Color.FromArgb(224, 224, 224);
-            textBox8.BorderStyle = BorderStyle.None;
-            textBox8.Font = new Font("Century Gothic", 12F);
-            textBox8.Location = new Point(493, 323);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(326, 20);
-            textBox8.TabIndex = 26;
+            txtEmail.BackColor = Color.FromArgb(224, 224, 224);
+            txtEmail.BorderStyle = BorderStyle.None;
+            txtEmail.Font = new Font("Century Gothic", 12F);
+            txtEmail.Location = new Point(493, 323);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(326, 20);
+            txtEmail.TabIndex = 26;
             // 
-            // textBox9
+            // txtTelefono
             // 
-            textBox9.BackColor = Color.FromArgb(224, 224, 224);
-            textBox9.BorderStyle = BorderStyle.None;
-            textBox9.Font = new Font("Century Gothic", 12F);
-            textBox9.Location = new Point(138, 322);
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(236, 20);
-            textBox9.TabIndex = 27;
+            txtTelefono.BackColor = Color.FromArgb(224, 224, 224);
+            txtTelefono.BorderStyle = BorderStyle.None;
+            txtTelefono.Font = new Font("Century Gothic", 12F);
+            txtTelefono.Location = new Point(138, 322);
+            txtTelefono.Name = "txtTelefono";
+            txtTelefono.Size = new Size(236, 20);
+            txtTelefono.TabIndex = 27;
             // 
-            // textBox10
+            // txtSalario
             // 
-            textBox10.BackColor = Color.FromArgb(224, 224, 224);
-            textBox10.BorderStyle = BorderStyle.None;
-            textBox10.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox10.Location = new Point(173, 403);
-            textBox10.Name = "textBox10";
-            textBox10.Size = new Size(215, 20);
-            textBox10.TabIndex = 28;
+            txtSalario.BackColor = Color.FromArgb(224, 224, 224);
+            txtSalario.BorderStyle = BorderStyle.None;
+            txtSalario.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtSalario.Location = new Point(173, 403);
+            txtSalario.Name = "txtSalario";
+            txtSalario.Size = new Size(215, 20);
+            txtSalario.TabIndex = 28;
             // 
-            // textBox11
+            // txtCuenta
             // 
-            textBox11.BackColor = Color.FromArgb(224, 224, 224);
-            textBox11.BorderStyle = BorderStyle.None;
-            textBox11.Font = new Font("Century Gothic", 12F);
-            textBox11.Location = new Point(257, 447);
-            textBox11.Name = "textBox11";
-            textBox11.Size = new Size(375, 20);
-            textBox11.TabIndex = 29;
+            txtCuenta.BackColor = Color.FromArgb(224, 224, 224);
+            txtCuenta.BorderStyle = BorderStyle.None;
+            txtCuenta.Font = new Font("Century Gothic", 12F);
+            txtCuenta.Location = new Point(257, 447);
+            txtCuenta.Name = "txtCuenta";
+            txtCuenta.Size = new Size(375, 20);
+            txtCuenta.TabIndex = 29;
             // 
-            // textBox12
+            // txtNSS
             // 
-            textBox12.BackColor = Color.FromArgb(224, 224, 224);
-            textBox12.BorderStyle = BorderStyle.None;
-            textBox12.Font = new Font("Century Gothic", 12F);
-            textBox12.Location = new Point(545, 401);
-            textBox12.Name = "textBox12";
-            textBox12.Size = new Size(274, 20);
-            textBox12.TabIndex = 30;
+            txtNSS.BackColor = Color.FromArgb(224, 224, 224);
+            txtNSS.BorderStyle = BorderStyle.None;
+            txtNSS.Font = new Font("Century Gothic", 12F);
+            txtNSS.Location = new Point(545, 401);
+            txtNSS.Name = "txtNSS";
+            txtNSS.Size = new Size(274, 20);
+            txtNSS.TabIndex = 30;
             // 
-            // textBox13
+            // txtPuesto
             // 
-            textBox13.BackColor = Color.FromArgb(224, 224, 224);
-            textBox13.BorderStyle = BorderStyle.None;
-            textBox13.Font = new Font("Century Gothic", 12F);
-            textBox13.Location = new Point(508, 238);
-            textBox13.Name = "textBox13";
-            textBox13.Size = new Size(207, 20);
-            textBox13.TabIndex = 31;
-            // 
-            // textBox14
-            // 
-            textBox14.BackColor = Color.FromArgb(224, 224, 224);
-            textBox14.BorderStyle = BorderStyle.None;
-            textBox14.Font = new Font("Century Gothic", 12F);
-            textBox14.Location = new Point(507, 118);
-            textBox14.Name = "textBox14";
-            textBox14.Size = new Size(208, 20);
-            textBox14.TabIndex = 32;
+            txtPuesto.BackColor = Color.FromArgb(224, 224, 224);
+            txtPuesto.BorderStyle = BorderStyle.None;
+            txtPuesto.Font = new Font("Century Gothic", 12F);
+            txtPuesto.Location = new Point(507, 118);
+            txtPuesto.Name = "txtPuesto";
+            txtPuesto.Size = new Size(208, 20);
+            txtPuesto.TabIndex = 32;
             // 
             // pictureBox1
             // 
@@ -460,15 +451,16 @@
             panel5.Size = new Size(367, 1);
             panel5.TabIndex = 37;
             // 
-            // button1
+            // btnRegistrar
             // 
-            button1.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(367, 497);
-            button1.Name = "button1";
-            button1.Size = new Size(193, 33);
-            button1.TabIndex = 38;
-            button1.Text = "Registrar";
-            button1.UseVisualStyleBackColor = true;
+            btnRegistrar.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnRegistrar.Location = new Point(367, 497);
+            btnRegistrar.Name = "btnRegistrar";
+            btnRegistrar.Size = new Size(193, 33);
+            btnRegistrar.TabIndex = 38;
+            btnRegistrar.Text = "Registrar";
+            btnRegistrar.UseVisualStyleBackColor = true;
+            btnRegistrar.Click += btnRegistrar_Click;
             // 
             // panel6
             // 
@@ -510,22 +502,6 @@
             panel10.Size = new Size(208, 1);
             panel10.TabIndex = 43;
             // 
-            // panel11
-            // 
-            panel11.BackColor = Color.FromArgb(64, 64, 64);
-            panel11.Location = new Point(616, 184);
-            panel11.Name = "panel11";
-            panel11.Size = new Size(153, 1);
-            panel11.TabIndex = 44;
-            // 
-            // panel12
-            // 
-            panel12.BackColor = Color.FromArgb(64, 64, 64);
-            panel12.Location = new Point(508, 265);
-            panel12.Name = "panel12";
-            panel12.Size = new Size(207, 1);
-            panel12.TabIndex = 45;
-            // 
             // panel13
             // 
             panel13.BackColor = Color.FromArgb(64, 64, 64);
@@ -558,44 +534,67 @@
             panel16.Size = new Size(375, 1);
             panel16.TabIndex = 49;
             // 
+            // dtpFechaNac
+            // 
+            dtpFechaNac.Location = new Point(610, 161);
+            dtpFechaNac.Name = "dtpFechaNac";
+            dtpFechaNac.Size = new Size(246, 23);
+            dtpFechaNac.TabIndex = 50;
+            // 
+            // panel17
+            // 
+            panel17.BackColor = Color.FromArgb(64, 64, 64);
+            panel17.Location = new Point(503, 269);
+            panel17.Name = "panel17";
+            panel17.Size = new Size(275, 1);
+            panel17.TabIndex = 51;
+            // 
+            // panel11
+            // 
+            panel11.BackColor = Color.FromArgb(64, 64, 64);
+            panel11.Location = new Point(601, 186);
+            panel11.Name = "panel11";
+            panel11.Size = new Size(275, 1);
+            panel11.TabIndex = 52;
+            // 
             // frmDatos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(224, 224, 224);
             ClientSize = new Size(888, 562);
+            Controls.Add(panel11);
+            Controls.Add(panel17);
+            Controls.Add(dtpFechaNac);
             Controls.Add(panel16);
             Controls.Add(panel15);
             Controls.Add(panel14);
             Controls.Add(panel13);
-            Controls.Add(panel12);
-            Controls.Add(panel11);
             Controls.Add(panel10);
             Controls.Add(panel9);
             Controls.Add(panel8);
             Controls.Add(panel7);
             Controls.Add(panel6);
-            Controls.Add(button1);
+            Controls.Add(btnRegistrar);
             Controls.Add(panel5);
             Controls.Add(panel4);
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(pictureBox1);
-            Controls.Add(textBox14);
-            Controls.Add(textBox13);
-            Controls.Add(textBox12);
-            Controls.Add(textBox11);
-            Controls.Add(textBox10);
-            Controls.Add(textBox9);
-            Controls.Add(textBox8);
-            Controls.Add(textBox7);
-            Controls.Add(textBox6);
-            Controls.Add(textBox5);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
-            Controls.Add(comboBox1);
+            Controls.Add(txtPuesto);
+            Controls.Add(txtNSS);
+            Controls.Add(txtCuenta);
+            Controls.Add(txtSalario);
+            Controls.Add(txtTelefono);
+            Controls.Add(txtEmail);
+            Controls.Add(txtEstado);
+            Controls.Add(txtDireccion);
+            Controls.Add(txtCiudad);
+            Controls.Add(txtApellidos);
+            Controls.Add(txtNombre);
+            Controls.Add(txtPassword);
+            Controls.Add(txtUser);
+            Controls.Add(cmbRol);
             Controls.Add(panel1);
             Controls.Add(label17);
             Controls.Add(label16);
@@ -615,6 +614,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "frmDatos";
             Text = "frmDatos";
+            Load += frmDatos_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -640,37 +640,37 @@
         private Label label17;
         private Panel panel1;
         private Label label1;
-        private ComboBox comboBox1;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private TextBox textBox6;
-        private TextBox textBox7;
-        private TextBox textBox8;
-        private TextBox textBox9;
-        private TextBox textBox10;
-        private TextBox textBox11;
-        private TextBox textBox12;
-        private TextBox textBox13;
-        private TextBox textBox14;
+        private ComboBox cmbRol;
+        private TextBox txtUser;
+        private TextBox txtPassword;
+        private TextBox txtNombre;
+        private TextBox txtApellidos;
+        private TextBox txtCiudad;
+        private TextBox txtDireccion;
+        private TextBox txtEstado;
+        private TextBox txtEmail;
+        private TextBox txtTelefono;
+        private TextBox txtSalario;
+        private TextBox txtCuenta;
+        private TextBox txtNSS;
+        private TextBox txtPuesto;
         private PictureBox pictureBox1;
         private Panel panel2;
         private Panel panel3;
         private Panel panel4;
         private Panel panel5;
-        private Button button1;
+        private Button btnRegistrar;
         private Panel panel6;
         private Panel panel7;
         private Panel panel8;
         private Panel panel9;
         private Panel panel10;
-        private Panel panel11;
-        private Panel panel12;
         private Panel panel13;
         private Panel panel14;
         private Panel panel15;
         private Panel panel16;
+        private DateTimePicker dtpFechaNac;
+        private Panel panel17;
+        private Panel panel11;
     }
 }
