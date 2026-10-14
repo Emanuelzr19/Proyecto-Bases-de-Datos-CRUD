@@ -7,7 +7,7 @@
     <Compile Update="ui\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="ui\frmMenu.cs">
+    <Compile Update="ui\frmOptions.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="ui\frmOptionsUser.cs">

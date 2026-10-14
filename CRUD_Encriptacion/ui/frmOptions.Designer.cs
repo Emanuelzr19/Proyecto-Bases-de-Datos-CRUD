@@ -1,6 +1,7 @@
 ﻿namespace CRUD_Encriptacion
 {
-    partial class frmMenu
+    partial class frmOptions
+
     {
         /// <summary>
         /// Required designer variable.
@@ -65,6 +66,7 @@
             btnVer.TextAlign = ContentAlignment.MiddleLeft;
             btnVer.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnVer.UseVisualStyleBackColor = false;
+            btnVer.Click += btnVer_Click;
             // 
             // panel1
             // 
@@ -150,6 +152,7 @@
             btnAgregar.TextAlign = ContentAlignment.MiddleLeft;
             btnAgregar.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnAgregar.UseVisualStyleBackColor = false;
+            btnAgregar.Click += btnAgregar_Click;
             // 
             // btnActualizar
             // 
@@ -168,6 +171,7 @@
             btnActualizar.TextAlign = ContentAlignment.MiddleLeft;
             btnActualizar.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnActualizar.UseVisualStyleBackColor = false;
+            btnActualizar.Click += btnActualizar_Click;
             // 
             // btnEliminar
             // 
@@ -186,6 +190,7 @@
             btnEliminar.TextAlign = ContentAlignment.MiddleLeft;
             btnEliminar.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnEliminar.UseVisualStyleBackColor = false;
+            btnEliminar.Click += btnEliminar_Click;
             // 
             // btnSalir
             // 

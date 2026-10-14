@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CRUD_Encriptacion.ui;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,12 +11,12 @@ namespace CRUD_Encriptacion
 {
     public partial class frmOptions : Form
     {
-        //Variable global para guardar el rol
-        private string rolActual;
+
+        private string _rolUsuario;
         public frmOptions(string rol)
         {
             InitializeComponent();
-            rolActual = rol;
+            _rolUsuario = rol;
         }
 
         private void btnSalir_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -44,6 +45,35 @@ namespace CRUD_Encriptacion
             }
             this.WindowState = FormWindowState.Minimized;
             this.Opacity = 1.0;
+        }
+
+        private void btnVer_Click(object sender, EventArgs e)
+        {
+            frmUsuarios ventanaUsuarios = new frmUsuarios(_rolUsuario, "Ver");
+            ventanaUsuarios.Show();
+            this.Hide();
+
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            frmDatos ventanaDatos = new frmDatos();
+            ventanaDatos.Show();
+            this.Hide();
+        }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            frmUsuarios ventanaUsuarios = new frmUsuarios(_rolUsuario, "Actualizar");
+            ventanaUsuarios.Show();
+            this.Hide();
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            frmUsuarios ventanaUsuarios = new frmUsuarios(_rolUsuario, "Eliminar");
+            ventanaUsuarios.Show();
+            this.Hide();
         }
     }
 }

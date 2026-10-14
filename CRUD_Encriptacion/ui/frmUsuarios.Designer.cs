@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             dataGridView1 = new DataGridView();
             clmID = new DataGridViewTextBoxColumn();
             clmUsuario = new DataGridViewTextBoxColumn();
@@ -49,8 +49,6 @@
             clmNSS = new DataGridViewTextBoxColumn();
             clmCuentaBancaria = new DataGridViewTextBoxColumn();
             lblTitle = new Label();
-            lblUserFilter = new Label();
-            txtUser = new TextBox();
             btnResetFilters = new Button();
             pnlTop = new Panel();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -62,32 +60,32 @@
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.AllowUserToResizeRows = false;
-            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.False;
-            dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.False;
+            dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
             dataGridView1.BackgroundColor = Color.White;
             dataGridView1.BorderStyle = BorderStyle.None;
             dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
             dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = Color.White;
-            dataGridViewCellStyle5.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            dataGridViewCellStyle5.ForeColor = Color.FromArgb(64, 64, 64);
-            dataGridViewCellStyle5.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.True;
-            dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.White;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = Color.FromArgb(64, 64, 64);
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             dataGridView1.ColumnHeadersHeight = 40;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { clmID, clmUsuario, clmContraseña, clmRol, clmNombre, clmApellidos, clmEmail, clmTelefono, clmDireccion, clmCiudad, clmEstado, clmFechaNacimiento, clmPuesto, clmSalario, clmNSS, clmCuentaBancaria });
-            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = SystemColors.Window;
-            dataGridViewCellStyle6.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle6.ForeColor = Color.FromArgb(64, 64, 64);
-            dataGridViewCellStyle6.SelectionBackColor = Color.FromArgb(240, 240, 240);
-            dataGridViewCellStyle6.SelectionForeColor = Color.Black;
-            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.False;
-            dataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = SystemColors.Window;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle3.ForeColor = Color.FromArgb(64, 64, 64);
+            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(240, 240, 240);
+            dataGridViewCellStyle3.SelectionForeColor = Color.Black;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
+            dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             dataGridView1.Dock = DockStyle.Fill;
             dataGridView1.EnableHeadersVisualStyles = false;
             dataGridView1.GridColor = Color.LightGray;
@@ -217,33 +215,11 @@
             lblTitle.AutoSize = true;
             lblTitle.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold);
             lblTitle.ForeColor = Color.FromArgb(64, 64, 64);
-            lblTitle.Location = new Point(39, 5);
+            lblTitle.Location = new Point(22, 24);
             lblTitle.Name = "lblTitle";
             lblTitle.Size = new Size(211, 30);
             lblTitle.TabIndex = 0;
             lblTitle.Text = "Reporte de Usuarios";
-            // 
-            // lblUserFilter
-            // 
-            lblUserFilter.AutoSize = true;
-            lblUserFilter.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblUserFilter.ForeColor = Color.DimGray;
-            lblUserFilter.Location = new Point(12, 66);
-            lblUserFilter.Name = "lblUserFilter";
-            lblUserFilter.Size = new Size(59, 17);
-            lblUserFilter.TabIndex = 4;
-            lblUserFilter.Text = "Usuarios";
-            // 
-            // txtUser
-            // 
-            txtUser.BorderStyle = BorderStyle.FixedSingle;
-            txtUser.Font = new Font("Segoe UI", 10F);
-            txtUser.ForeColor = Color.Gray;
-            txtUser.Location = new Point(77, 64);
-            txtUser.Name = "txtUser";
-            txtUser.Size = new Size(280, 25);
-            txtUser.TabIndex = 5;
-            txtUser.Text = "(Escribe para filtrar)";
             // 
             // btnResetFilters
             // 
@@ -253,7 +229,7 @@
             btnResetFilters.FlatStyle = FlatStyle.Flat;
             btnResetFilters.Font = new Font("Segoe UI", 9F);
             btnResetFilters.ForeColor = Color.Gray;
-            btnResetFilters.Location = new Point(785, 60);
+            btnResetFilters.Location = new Point(726, 12);
             btnResetFilters.Name = "btnResetFilters";
             btnResetFilters.Size = new Size(100, 30);
             btnResetFilters.TabIndex = 6;
@@ -264,8 +240,6 @@
             // 
             pnlTop.BackColor = Color.White;
             pnlTop.Controls.Add(btnResetFilters);
-            pnlTop.Controls.Add(txtUser);
-            pnlTop.Controls.Add(lblUserFilter);
             pnlTop.Controls.Add(lblTitle);
             pnlTop.Dock = DockStyle.Top;
             pnlTop.Location = new Point(0, 0);
@@ -308,8 +282,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn clmNSS;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmCuentaBancaria;
         private Label lblTitle;
-        private Label lblUserFilter;
-        private TextBox txtUser;
         private Button btnResetFilters;
         private Panel pnlTop;
     }
