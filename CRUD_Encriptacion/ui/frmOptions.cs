@@ -20,9 +20,30 @@ namespace CRUD_Encriptacion
 
         private void btnSalir_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            frmLogin frm=new frmLogin();
+            frmLogin frm = new frmLogin();
             frm.Show();
             this.Hide();
+        }
+
+        private async void btnCerrar_Click(object sender, EventArgs e)
+        {
+            while (this.Opacity > 0.0)
+            {
+                await Task.Delay(10);
+                this.Opacity -= 0.25;
+            }
+            Application.Exit();
+        }
+
+        private async void btnMinimizar_Click(object sender, EventArgs e)
+        {
+            while (this.Opacity > 0.0)
+            {
+                await Task.Delay(10);
+                this.Opacity -= 0.25;
+            }
+            this.WindowState = FormWindowState.Minimized;
+            this.Opacity = 1.0;
         }
     }
 }

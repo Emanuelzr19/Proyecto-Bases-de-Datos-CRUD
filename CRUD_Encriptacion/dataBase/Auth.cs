@@ -36,7 +36,6 @@ namespace CRUD_Encriptacion.dataBase
                     catch (Exception ex)
                     {
                         System.Windows.Forms.MessageBox.Show("Error SQL: " + ex.Message);
-                        //Console.WriteLine("Error de conexión a MySQL: " + ex.Message);
                         return null;
                     }
                 }
@@ -44,7 +43,6 @@ namespace CRUD_Encriptacion.dataBase
 
             if (hashAlmacenado == null) return null;
 
-            // Validación segura con método no reversible
             bool esValido = BCrypt.Net.BCrypt.Verify(passwordPlano, hashAlmacenado);
 
             if (esValido) return rolUsuario;

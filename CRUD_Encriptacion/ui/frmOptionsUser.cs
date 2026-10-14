@@ -21,5 +21,26 @@ namespace CRUD_Encriptacion.ui
             frm.Show();
             this.Hide();
         }
+
+        private async void btnCerrar_Click(object sender, EventArgs e)
+        {
+            while (this.Opacity > 0.0)
+            {
+                await Task.Delay(10);
+                this.Opacity -= 0.25;
+            }
+            Application.Exit();
+        }
+
+        private async void btnMinimizar_Click(object sender, EventArgs e)
+        {
+            while (this.Opacity > 0.0)
+            {
+                await Task.Delay(10);
+                this.Opacity -= 0.25;
+            }
+            this.WindowState = FormWindowState.Minimized;
+            this.Opacity = 1.0;
+        }
     }
 }

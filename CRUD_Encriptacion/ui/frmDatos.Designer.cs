@@ -45,6 +45,8 @@
             label16 = new Label();
             label17 = new Label();
             panel1 = new Panel();
+            btnMinimizar = new PictureBox();
+            btnCerrar = new PictureBox();
             label1 = new Label();
             comboBox1 = new ComboBox();
             textBox1 = new TextBox();
@@ -79,6 +81,8 @@
             panel15 = new Panel();
             panel16 = new Panel();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)btnMinimizar).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnCerrar).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -250,11 +254,37 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(0, 122, 204);
+            panel1.Controls.Add(btnMinimizar);
+            panel1.Controls.Add(btnCerrar);
             panel1.Controls.Add(label1);
             panel1.Location = new Point(-6, -1);
             panel1.Name = "panel1";
             panel1.Size = new Size(912, 47);
             panel1.TabIndex = 17;
+            // 
+            // btnMinimizar
+            // 
+            btnMinimizar.BackColor = Color.DimGray;
+            btnMinimizar.Image = (Image)resources.GetObject("btnMinimizar.Image");
+            btnMinimizar.Location = new Point(843, 1);
+            btnMinimizar.Name = "btnMinimizar";
+            btnMinimizar.Size = new Size(24, 24);
+            btnMinimizar.SizeMode = PictureBoxSizeMode.AutoSize;
+            btnMinimizar.TabIndex = 51;
+            btnMinimizar.TabStop = false;
+            btnMinimizar.Click += btnMinimizar_Click;
+            // 
+            // btnCerrar
+            // 
+            btnCerrar.BackColor = Color.DimGray;
+            btnCerrar.Image = (Image)resources.GetObject("btnCerrar.Image");
+            btnCerrar.Location = new Point(869, 1);
+            btnCerrar.Name = "btnCerrar";
+            btnCerrar.Size = new Size(24, 24);
+            btnCerrar.SizeMode = PictureBoxSizeMode.AutoSize;
+            btnCerrar.TabIndex = 50;
+            btnCerrar.TabStop = false;
+            btnCerrar.Click += btnCerrar_Click;
             // 
             // label1
             // 
@@ -496,7 +526,7 @@
             // 
             // panel9
             // 
-            panel9.BackColor = Color.DimGray;
+            panel9.BackColor = Color.LightGray;
             panel9.Location = new Point(12, 386);
             panel9.Name = "panel9";
             panel9.Size = new Size(856, 3);
@@ -617,6 +647,8 @@
             Text = "frmDatos";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)btnMinimizar).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnCerrar).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -672,5 +704,7 @@
         private Panel panel14;
         private Panel panel15;
         private Panel panel16;
+        private PictureBox btnCerrar;
+        private PictureBox btnMinimizar;
     }
 }

@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmOptions));
             btnVer = new Button();
             panel1 = new Panel();
+            btnMinimizar = new PictureBox();
+            btnCerrar = new PictureBox();
             pictureBox1 = new PictureBox();
             label2 = new Label();
             lblSaludo = new Label();
@@ -40,6 +42,8 @@
             btnSalir = new LinkLabel();
             pictureBox2 = new PictureBox();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)btnMinimizar).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnCerrar).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -65,6 +69,8 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(0, 122, 204);
+            panel1.Controls.Add(btnMinimizar);
+            panel1.Controls.Add(btnCerrar);
             panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(lblSaludo);
@@ -73,10 +79,34 @@
             panel1.Size = new Size(816, 106);
             panel1.TabIndex = 0;
             // 
+            // btnMinimizar
+            // 
+            btnMinimizar.BackColor = Color.DimGray;
+            btnMinimizar.Image = (Image)resources.GetObject("btnMinimizar.Image");
+            btnMinimizar.Location = new Point(380, 1);
+            btnMinimizar.Name = "btnMinimizar";
+            btnMinimizar.Size = new Size(24, 24);
+            btnMinimizar.SizeMode = PictureBoxSizeMode.AutoSize;
+            btnMinimizar.TabIndex = 7;
+            btnMinimizar.TabStop = false;
+            btnMinimizar.Click += btnMinimizar_Click;
+            // 
+            // btnCerrar
+            // 
+            btnCerrar.BackColor = Color.DimGray;
+            btnCerrar.Image = (Image)resources.GetObject("btnCerrar.Image");
+            btnCerrar.Location = new Point(405, 0);
+            btnCerrar.Name = "btnCerrar";
+            btnCerrar.Size = new Size(24, 24);
+            btnCerrar.SizeMode = PictureBoxSizeMode.AutoSize;
+            btnCerrar.TabIndex = 6;
+            btnCerrar.TabStop = false;
+            btnCerrar.Click += btnCerrar_Click;
+            // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(260, 3);
+            pictureBox1.Location = new Point(253, 10);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(145, 87);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -87,7 +117,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Arial", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(21, 55);
+            label2.Location = new Point(20, 62);
             label2.Name = "label2";
             label2.Size = new Size(179, 22);
             label2.TabIndex = 1;
@@ -97,7 +127,7 @@
             // 
             lblSaludo.AutoSize = true;
             lblSaludo.Font = new Font("Century Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblSaludo.Location = new Point(21, 10);
+            lblSaludo.Location = new Point(21, 15);
             lblSaludo.Name = "lblSaludo";
             lblSaludo.Size = new Size(213, 36);
             lblSaludo.TabIndex = 0;
@@ -200,6 +230,8 @@
             Text = "Form2";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)btnMinimizar).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnCerrar).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
@@ -218,5 +250,7 @@
         private PictureBox pictureBox1;
         private LinkLabel btnSalir;
         private PictureBox pictureBox2;
+        private PictureBox btnCerrar;
+        private PictureBox btnMinimizar;
     }
 }
