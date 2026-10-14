@@ -1,6 +1,6 @@
 ﻿namespace CRUD_Encriptacion
 {
-    partial class frmOptions
+    partial class frmMenu
     {
         /// <summary>
         /// Required designer variable.
