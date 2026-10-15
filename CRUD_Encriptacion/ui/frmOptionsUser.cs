@@ -10,9 +10,14 @@ namespace CRUD_Encriptacion.ui
 {
     public partial class frmOptionsUser : Form
     {
-        public frmOptionsUser()
+        private string _rolUsuario;
+        private string _nombreUsuario;
+        public frmOptionsUser(string rolUsuario, string nombreUsuario)
         {
             InitializeComponent();
+            _rolUsuario = rolUsuario;
+            _nombreUsuario = nombreUsuario;
+            lblSaludo.Text = "Hola, " + _nombreUsuario;
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -41,6 +46,13 @@ namespace CRUD_Encriptacion.ui
             }
             this.WindowState = FormWindowState.Minimized;
             this.Opacity = 1.0;
+        }
+
+        private void btnVer_Click(object sender, EventArgs e)
+        {
+            frmUsuarios ventanaUsuarios = new frmUsuarios(_rolUsuario, "Ver");
+            ventanaUsuarios.Show();
+            this.Hide();
         }
     }
 }

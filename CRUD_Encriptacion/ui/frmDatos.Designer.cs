@@ -292,6 +292,7 @@
             cmbRol.FlatStyle = FlatStyle.Flat;
             cmbRol.Font = new Font("Century Gothic", 12F);
             cmbRol.FormattingEnabled = true;
+            cmbRol.Items.AddRange(new object[] { "Administrador", "Empleado" });
             cmbRol.Location = new Point(506, 78);
             cmbRol.Name = "cmbRol";
             cmbRol.Size = new Size(121, 29);
@@ -325,7 +326,7 @@
             txtNombre.Location = new Point(128, 155);
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(275, 20);
-            txtNombre.TabIndex = 0;
+            txtNombre.TabIndex = 5;
             // 
             // txtApellidos
             // 
@@ -335,7 +336,7 @@
             txtApellidos.Location = new Point(135, 197);
             txtApellidos.Name = "txtApellidos";
             txtApellidos.Size = new Size(367, 20);
-            txtApellidos.TabIndex = 5;
+            txtApellidos.TabIndex = 7;
             // 
             // txtCiudad
             // 
@@ -355,7 +356,7 @@
             txtDireccion.Location = new Point(141, 285);
             txtDireccion.Name = "txtDireccion";
             txtDireccion.Size = new Size(361, 20);
-            txtDireccion.TabIndex = 9;
+            txtDireccion.TabIndex = 10;
             // 
             // txtEstado
             // 
@@ -375,7 +376,7 @@
             txtEmail.Location = new Point(493, 328);
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(326, 20);
-            txtEmail.TabIndex = 11;
+            txtEmail.TabIndex = 12;
             // 
             // txtTelefono
             // 
@@ -385,7 +386,7 @@
             txtTelefono.Location = new Point(138, 327);
             txtTelefono.Name = "txtTelefono";
             txtTelefono.Size = new Size(236, 20);
-            txtTelefono.TabIndex = 10;
+            txtTelefono.TabIndex = 11;
             // 
             // txtSalario
             // 
@@ -395,7 +396,7 @@
             txtSalario.Location = new Point(173, 408);
             txtSalario.Name = "txtSalario";
             txtSalario.Size = new Size(215, 20);
-            txtSalario.TabIndex = 12;
+            txtSalario.TabIndex = 13;
             // 
             // txtCuentaBancaria
             // 
@@ -405,7 +406,7 @@
             txtCuentaBancaria.Location = new Point(257, 452);
             txtCuentaBancaria.Name = "txtCuentaBancaria";
             txtCuentaBancaria.Size = new Size(375, 20);
-            txtCuentaBancaria.TabIndex = 14;
+            txtCuentaBancaria.TabIndex = 15;
             // 
             // txtNSS
             // 
@@ -415,7 +416,7 @@
             txtNSS.Location = new Point(545, 406);
             txtNSS.Name = "txtNSS";
             txtNSS.Size = new Size(274, 20);
-            txtNSS.TabIndex = 13;
+            txtNSS.TabIndex = 14;
             // 
             // txtFechaNacimiento
             // 
@@ -485,9 +486,10 @@
             btnRegistrar.Location = new Point(367, 497);
             btnRegistrar.Name = "btnRegistrar";
             btnRegistrar.Size = new Size(193, 33);
-            btnRegistrar.TabIndex = 15;
+            btnRegistrar.TabIndex = 16;
             btnRegistrar.Text = "Registrar";
             btnRegistrar.UseVisualStyleBackColor = true;
+            btnRegistrar.Click += btnRegistrar_Click;
             // 
             // panel6
             // 

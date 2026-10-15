@@ -61,6 +61,7 @@
             btnVer.TextAlign = ContentAlignment.MiddleLeft;
             btnVer.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnVer.UseVisualStyleBackColor = false;
+            btnVer.Click += btnVer_Click;
             // 
             // lblSaludo
             // 

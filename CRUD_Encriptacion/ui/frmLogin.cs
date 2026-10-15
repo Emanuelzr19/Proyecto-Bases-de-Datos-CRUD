@@ -1,4 +1,5 @@
 using CRUD_Encriptacion.dataBase;
+using CRUD_Encriptacion.ui;
 using MySql.Data.MySqlClient;
 using System.Runtime.InteropServices;
 
@@ -48,13 +49,24 @@ namespace CRUD_Encriptacion
             string rolUsuario = authDB.ValidarLogin(usuario, password);
 
 
-            if (rolUsuario != null)
+            if (rolUsuario == "Administrador")
             {
                 MessageBox.Show($"¡Bienvenido! Has ingresado con el rol de: {rolUsuario}.", "Acceso concedido", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
 
                 frmOptions ventanaPrincipal = new frmOptions(rolUsuario);
                 ventanaPrincipal.Show();
+
+
+                this.Hide();
+            }
+            else if (rolUsuario == "Empleado")
+            {
+                MessageBox.Show($"¡Bienvenido! Has ingresado con el rol de: {rolUsuario}.", "Acceso concedido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+                frmOptionsUser ventana = new frmOptionsUser(rolUsuario, usuario);
+                ventana.Show();
 
 
                 this.Hide();
@@ -134,8 +146,10 @@ namespace CRUD_Encriptacion
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        
-        
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            MessageBox.Show("Pongase en contacto con el ADMINISTRADOR de su EMPRESA", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }
 

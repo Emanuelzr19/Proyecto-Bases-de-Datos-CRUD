@@ -145,6 +145,7 @@
             linkLabel1.TabIndex = 0;
             linkLabel1.TabStop = true;
             linkLabel1.Text = "¿Ha olvidado su contraseña?";
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
             // btnMinimizar
             // 
