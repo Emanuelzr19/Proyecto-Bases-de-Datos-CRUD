@@ -21,11 +21,7 @@ namespace CRUD_Encriptacion.ui
             _accionContexto = accion;
         }
 
-        private void frmUsuarios_Load(object sender, EventArgs e)
-        {
-            ConfigurarInterfaz();
-            CargarDatosGrilla();
-        }
+
 
         private void ConfigurarInterfaz()
         {
@@ -68,15 +64,52 @@ namespace CRUD_Encriptacion.ui
             }).ToList();
 
             dgvUsuarios.DataSource = null;
+
+            dgvUsuarios.Columns.Clear();
+            dgvUsuarios.AutoGenerateColumns = true;
+
             dgvUsuarios.DataSource = datosMostrados;
         }
 
         private string ObtenerDatoDesencriptado(byte[] datoCifrado)
         {
-            AESCryptography aes = new AESCryptography();
-            return aes.Desencriptar(datoCifrado);
+            if (datoCifrado == null || datoCifrado.Length == 0)
+            {
+                return "";
+            }
+
+            try
+            {
+                AESCryptography aes = new AESCryptography();
+                return aes.Desencriptar(datoCifrado);
+            }
+            catch (System.Security.Cryptography.CryptographicException)
+            {
+                return System.Text.Encoding.UTF8.GetString(datoCifrado);
+            }
         }
 
+
+
+        private void dgvUsuarios_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dgvUsuarios.SelectedRows.Count > 0)
+            {
+                if (_rolUsuario == "Administrador" && _accionContexto == "Eliminar")
+                {
+                    btnEliminar.Visible = true;
+                }
+                else if (_rolUsuario == "Administrador" && _accionContexto == "Actualizar")
+                {
+                    btnEditar.Visible = true;
+                }
+            }
+            else
+            {
+                btnEliminar.Visible = false;
+                btnEditar.Visible = false;
+            }
+        }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
@@ -99,6 +132,21 @@ namespace CRUD_Encriptacion.ui
             }
         }
 
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            if (_rolUsuario == "Administrador")
+            {
+                frmOptions ventanaAdmin = new frmOptions(_rolUsuario);
+                ventanaAdmin.Show();
+            }
+            else
+            {
+                frmOptionsUser ventanaEmpleado = new frmOptionsUser(_rolUsuario, "Empleado");
+                ventanaEmpleado.Show();
+            }
+            this.Close();
+        }
+
         private void btnEditar_Click(object sender, EventArgs e)
         {
             if (dgvUsuarios.SelectedRows.Count > 0)
@@ -118,39 +166,10 @@ namespace CRUD_Encriptacion.ui
             }
         }
 
-        private void btnSalir_Click(object sender, EventArgs e)
+        private void frmUsuarios_Load(object sender, EventArgs e)
         {
-            if (_rolUsuario == "Administrador")
-            {
-                frmOptions ventanaAdmin = new frmOptions(_rolUsuario);
-                ventanaAdmin.Show();
-            }
-            else
-            {
-                frmOptionsUser ventanaEmpleado = new frmOptionsUser(_rolUsuario, "Empleado");
-                ventanaEmpleado.Show();
-            }
-            this.Close();
-        }
-
-        private void dgvUsuarios_SelectionChanged(object sender, EventArgs e)
-        {
-            if (dgvUsuarios.SelectedRows.Count > 0)
-            {
-                if (_rolUsuario == "Administrador" && _accionContexto == "Eliminar")
-                {
-                    btnEliminar.Visible = true;
-                }
-                else if (_rolUsuario == "Administrador" && _accionContexto == "Actualizar")
-                {
-                    btnEditar.Visible = true;
-                }
-            }
-            else
-            {
-                btnEliminar.Visible = false;
-                btnEditar.Visible = false;
-            }
+            ConfigurarInterfaz();
+            CargarDatosGrilla();
         }
     }
 }

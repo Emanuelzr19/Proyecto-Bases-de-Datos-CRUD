@@ -303,7 +303,7 @@
             txtUsuario.BackColor = Color.FromArgb(224, 224, 224);
             txtUsuario.BorderStyle = BorderStyle.None;
             txtUsuario.Font = new Font("Century Gothic", 12F);
-            txtUsuario.Location = new Point(121, 75);
+            txtUsuario.Location = new Point(121, 78);
             txtUsuario.Name = "txtUsuario";
             txtUsuario.Size = new Size(266, 20);
             txtUsuario.TabIndex = 1;
@@ -313,7 +313,7 @@
             txtContrasena.BackColor = Color.FromArgb(224, 224, 224);
             txtContrasena.BorderStyle = BorderStyle.None;
             txtContrasena.Font = new Font("Century Gothic", 12F);
-            txtContrasena.Location = new Point(153, 113);
+            txtContrasena.Location = new Point(153, 116);
             txtContrasena.Name = "txtContrasena";
             txtContrasena.Size = new Size(246, 20);
             txtContrasena.TabIndex = 2;
@@ -323,7 +323,7 @@
             txtNombre.BackColor = Color.FromArgb(224, 224, 224);
             txtNombre.BorderStyle = BorderStyle.None;
             txtNombre.Font = new Font("Century Gothic", 12F);
-            txtNombre.Location = new Point(128, 155);
+            txtNombre.Location = new Point(128, 158);
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(275, 20);
             txtNombre.TabIndex = 5;
@@ -333,7 +333,7 @@
             txtApellidos.BackColor = Color.FromArgb(224, 224, 224);
             txtApellidos.BorderStyle = BorderStyle.None;
             txtApellidos.Font = new Font("Century Gothic", 12F);
-            txtApellidos.Location = new Point(135, 197);
+            txtApellidos.Location = new Point(135, 203);
             txtApellidos.Name = "txtApellidos";
             txtApellidos.Size = new Size(367, 20);
             txtApellidos.TabIndex = 7;
@@ -343,7 +343,7 @@
             txtCiudad.BackColor = Color.FromArgb(224, 224, 224);
             txtCiudad.BorderStyle = BorderStyle.None;
             txtCiudad.Font = new Font("Century Gothic", 12F);
-            txtCiudad.Location = new Point(124, 238);
+            txtCiudad.Location = new Point(124, 243);
             txtCiudad.Name = "txtCiudad";
             txtCiudad.Size = new Size(292, 20);
             txtCiudad.TabIndex = 8;
@@ -363,7 +363,7 @@
             txtEstado.BackColor = Color.FromArgb(224, 224, 224);
             txtEstado.BorderStyle = BorderStyle.None;
             txtEstado.Font = new Font("Century Gothic", 12F);
-            txtEstado.Location = new Point(511, 246);
+            txtEstado.Location = new Point(511, 245);
             txtEstado.Name = "txtEstado";
             txtEstado.Size = new Size(204, 20);
             txtEstado.TabIndex = 9;
@@ -433,7 +433,7 @@
             txtPuesto.BackColor = Color.FromArgb(224, 224, 224);
             txtPuesto.BorderStyle = BorderStyle.None;
             txtPuesto.Font = new Font("Century Gothic", 12F);
-            txtPuesto.Location = new Point(507, 118);
+            txtPuesto.Location = new Point(507, 121);
             txtPuesto.Name = "txtPuesto";
             txtPuesto.Size = new Size(208, 20);
             txtPuesto.TabIndex = 4;
@@ -487,7 +487,7 @@
             btnRegistrar.Name = "btnRegistrar";
             btnRegistrar.Size = new Size(193, 33);
             btnRegistrar.TabIndex = 16;
-            btnRegistrar.Text = "Registrar";
+            btnRegistrar.Text = "Aceptar";
             btnRegistrar.UseVisualStyleBackColor = true;
             btnRegistrar.Click += btnRegistrar_Click;
             // 

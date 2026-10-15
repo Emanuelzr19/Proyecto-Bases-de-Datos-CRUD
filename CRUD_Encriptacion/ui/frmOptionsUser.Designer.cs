@@ -171,6 +171,7 @@
             Controls.Add(btnVer);
             FormBorderStyle = FormBorderStyle.None;
             Name = "frmOptionsUser";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "frmOptionsUser";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);

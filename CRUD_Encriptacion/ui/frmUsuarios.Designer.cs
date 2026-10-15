@@ -239,6 +239,7 @@
             btnEliminar.TabIndex = 6;
             btnEliminar.Text = "Eliminar";
             btnEliminar.UseVisualStyleBackColor = false;
+            btnEliminar.Click += btnEliminar_Click;
             // 
             // pnlTop
             // 
@@ -277,10 +278,11 @@
             btnSalir.Name = "btnSalir";
             btnSalir.Size = new Size(113, 32);
             btnSalir.TabIndex = 8;
-            btnSalir.Text = "Salir";
+            btnSalir.Text = "Atrás";
             btnSalir.TextAlign = ContentAlignment.MiddleLeft;
             btnSalir.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnSalir.UseVisualStyleBackColor = false;
+            btnSalir.Click += btnSalir_Click;
             // 
             // btnEditar
             // 
@@ -295,6 +297,7 @@
             btnEditar.TabIndex = 7;
             btnEditar.Text = "Editar";
             btnEditar.UseVisualStyleBackColor = false;
+            btnEditar.Click += btnEditar_Click;
             // 
             // frmUsuarios
             // 
@@ -305,6 +308,7 @@
             Controls.Add(dgvUsuarios);
             Controls.Add(pnlTop);
             Name = "frmUsuarios";
+            Load += frmUsuarios_Load;
             ((System.ComponentModel.ISupportInitialize)dgvUsuarios).EndInit();
             pnlTop.ResumeLayout(false);
             pnlTop.PerformLayout();

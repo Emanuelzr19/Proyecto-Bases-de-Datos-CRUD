@@ -23,8 +23,6 @@ namespace CRUD_Encriptacion.ui
 
             _empleadoEnEdicion = empleado;
 
-            AESCryptography aes = new AESCryptography();
-
             txtUsuario.Text = empleado.Username;
             cmbRol.Text = empleado.Rol;
             txtNombre.Text = empleado.Nombre;
@@ -37,22 +35,29 @@ namespace CRUD_Encriptacion.ui
             txtFechaNacimiento.Text = empleado.FechaNacimiento.ToString("dd/MM/yyyy");
             txtPuesto.Text = empleado.Puesto;
 
-            txtSalario.Text = aes.Desencriptar(empleado.Salario);
-            txtNSS.Text = aes.Desencriptar(empleado.NumeroSeguroSocial);
-            txtCuentaBancaria.Text = aes.Desencriptar(empleado.CuentaBancaria);
+            txtSalario.Text = DesencriptarSeguro(empleado.Salario);
+            txtNSS.Text = DesencriptarSeguro(empleado.NumeroSeguroSocial);
+            txtCuentaBancaria.Text = DesencriptarSeguro(empleado.CuentaBancaria);
 
             btnRegistrar.Text = "Actualizar";
         }
 
         private async void btnCerrar_Click(object sender, EventArgs e)
-        {
-            while (this.Opacity > 0.0)
             {
-                await Task.Delay(10);
-                this.Opacity -= 0.25;
+                if (_empleadoEnEdicion != null)
+                {
+                    this.Close();
+                }
+                else
+                {
+                    Form menuPrincipal = Application.OpenForms["frmOptions"];
+                    if (menuPrincipal != null)
+                    {
+                        menuPrincipal.Show();
+                    }
+                    this.Close();
+                }
             }
-            Application.Exit();
-        }
 
         private async void btnMinimizar_Click(object sender, EventArgs e)
         {
@@ -74,7 +79,13 @@ namespace CRUD_Encriptacion.ui
                 txtTelefono, txtDireccion, txtCiudad, txtEstado, txtFechaNacimiento,
                 txtPuesto, txtSalario, txtNSS, txtCuentaBancaria);
 
-            if (!camposLlenos || !validador.EsEmailValido(txtEmail.Text) || !validador.EsFechaValida(txtFechaNacimiento.Text))
+            if (!camposLlenos ||
+                !validador.EsEmailValido(txtEmail.Text) ||
+                !validador.EsFechaValida(txtFechaNacimiento.Text) ||
+                !validador.EsTelefonoValido(txtTelefono.Text) ||
+                !validador.EsSalarioValido(txtSalario.Text) ||
+                !validador.EsNSSValido(txtNSS.Text) ||
+                !validador.EsCuentaBancariaValida(txtCuentaBancaria.Text))
             {
                 return;
             }
@@ -101,12 +112,48 @@ namespace CRUD_Encriptacion.ui
             };
 
             EmpleadoDAO dao = new EmpleadoDAO();
-            if (dao.Insertar(nuevoEmpleado))
+            if (_empleadoEnEdicion == null)
             {
-                MessageBox.Show("Usuario registrado con éxito.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Close();
+                if (dao.Insertar(nuevoEmpleado))
+                {
+                    MessageBox.Show("Usuario registrado con éxito.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    Form menuPrincipal = Application.OpenForms["frmOptions"];
+                    if (menuPrincipal != null)
+                    {
+                        menuPrincipal.Show();
+                    }
+
+                    this.Close();
+                }
+            }
+            else
+            {
+                nuevoEmpleado.Id = _empleadoEnEdicion.Id;
+
+                if (dao.Actualizar(nuevoEmpleado))
+                {
+                    MessageBox.Show("Usuario actualizado con éxito.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Close();
+                }
             }
         }
-    
+        private string DesencriptarSeguro(byte[] datoCifrado)
+        {
+            if (datoCifrado == null || datoCifrado.Length == 0)
+            {
+                return "";
+            }
+
+            try
+            {
+                AESCryptography aes = new AESCryptography();
+                return aes.Desencriptar(datoCifrado);
+            }
+            catch (System.Security.Cryptography.CryptographicException)
+            {
+                return System.Text.Encoding.UTF8.GetString(datoCifrado);
+            }
+        }
     }
 }

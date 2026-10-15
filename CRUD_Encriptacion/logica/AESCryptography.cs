@@ -1,4 +1,6 @@
-﻿using System;
+﻿using System.Security.Cryptography;
+using System.Text;
+using System;
 using System.IO;
 using System.Security.Cryptography;
 using System.Text;
@@ -7,8 +9,21 @@ namespace CRUD_Encriptacion.logica
 {
     public class AESCryptography
     {
-        private readonly byte[] _clave = Encoding.UTF8.GetBytes("**PRIvada002233");
-        private readonly byte[] _iv = Encoding.UTF8.GetBytes("VectorInicio1234");
+        private readonly byte[] _clave;
+        private readonly byte[] _iv;
+
+        public AESCryptography()
+        {
+            using (SHA256 sha256 = SHA256.Create())
+            {
+                _clave = sha256.ComputeHash(Encoding.UTF8.GetBytes("**PRIvada002233"));
+            }
+
+            using (MD5 md5 = MD5.Create())
+            {
+                _iv = md5.ComputeHash(Encoding.UTF8.GetBytes("Algosecreto123"));
+            }
+        }
 
         public byte[] Encriptar(string textoPlano)
         {
