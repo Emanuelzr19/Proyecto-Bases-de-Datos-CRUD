@@ -78,6 +78,7 @@ namespace CRUD_Encriptacion.dataBase
                                 {
                                     Id = Convert.ToInt32(reader["Id"]),
                                     Username = reader["Username"].ToString(),
+                                    Password = reader["Password"].ToString(),
                                     Rol = reader["Rol"].ToString(),
                                     Nombre = reader["Nombre"].ToString(),
                                     Apellidos = reader["Apellidos"].ToString(),
@@ -92,6 +93,9 @@ namespace CRUD_Encriptacion.dataBase
                                     NumeroSeguroSocial = (byte[])reader["NumeroSeguroSocial"],
                                     CuentaBancaria = (byte[])reader["CuentaBancaria"]
                                 };
+
+
+
                                 lista.Add(emp);
                             }
                         }

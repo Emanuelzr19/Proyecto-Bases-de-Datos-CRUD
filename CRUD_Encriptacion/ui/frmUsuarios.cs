@@ -48,6 +48,7 @@ namespace CRUD_Encriptacion.ui
             {
                 emp.Id,
                 emp.Username,
+                Contrasena = emp.Password,
                 emp.Rol,
                 emp.Nombre,
                 emp.Apellidos,
@@ -58,9 +59,9 @@ namespace CRUD_Encriptacion.ui
                 emp.Estado,
                 emp.FechaNacimiento,
                 emp.Puesto,
-                Salario = _rolUsuario == "Administrador" ? ObtenerDatoDesencriptado(emp.Salario) : "********",
-                NSS = _rolUsuario == "Administrador" ? ObtenerDatoDesencriptado(emp.NumeroSeguroSocial) : "********",
-                CuentaBancaria = _rolUsuario == "Administrador" ? ObtenerDatoDesencriptado(emp.CuentaBancaria) : "********"
+                Salario = _rolUsuario == "Administrador" ? ObtenerDatoDesencriptado(emp.Salario) : ObtenerCifradoBase64(emp.Salario),
+                NSS = _rolUsuario == "Administrador" ? ObtenerDatoDesencriptado(emp.NumeroSeguroSocial) : ObtenerCifradoBase64(emp.NumeroSeguroSocial),
+                CuentaBancaria = _rolUsuario == "Administrador" ? ObtenerDatoDesencriptado(emp.CuentaBancaria) : ObtenerCifradoBase64(emp.CuentaBancaria)
             }).ToList();
 
             dgvUsuarios.DataSource = null;
@@ -171,5 +172,14 @@ namespace CRUD_Encriptacion.ui
             ConfigurarInterfaz();
             CargarDatosGrilla();
         }
+        private string ObtenerCifradoBase64(byte[] datoCifrado)
+        {
+            if (datoCifrado == null || datoCifrado.Length == 0)
+            {
+                return "";
+            }
+            return Convert.ToBase64String(datoCifrado);
+        }
+
     }
 }
